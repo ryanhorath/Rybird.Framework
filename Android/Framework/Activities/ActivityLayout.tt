@@ -1,0 +1,190 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Xml.Linq" #>
+<#@ assembly Name="System.Windows.Forms" #>
+<#@ assembly Name="Microsoft.VisualStudio.Shell.Interop" #>
+<#@ assembly Name="Microsoft.VisualStudio.Shell.12.0" #>
+<#@ assembly name="EnvDTE"#>
+<#@ assembly name="EnvDTE80"#>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="Microsoft.VisualStudio.Shell.Interop" #>
+<#@ import namespace="Microsoft.VisualStudio" #>
+<#@ import namespace="EnvDTE"#>
+<#@ output extension=".cs" #>
+
+<#foreach(var model in GetClassModels()){#>
+
+namespace <#=model.Namespace#>
+{
+    public partial class <#=model.Name#>
+    {
+<#foreach(var view in model.Views){#>
+	    public <#=view.Type#> <#=view.Name#>
+	    {
+		    get
+		    {
+			    return Find<<#=view.Type#>>(ref _<#=view.Field#>, Resource.Id.<#=view.Name#>);
+		    }
+	    }
+	    private <#=view.Type#> _<#=view.Field#>;
+<#}#>
+
+	    private T Find<T>(ref T field, int id)
+			where T : global::Android.Views.View
+	    {
+		    if(field == null)
+		    {
+			    field = FindViewById<T>(id);
+		    }
+		    return field;
+	    }
+    }
+}
+
+<#}#>
+
+<#+
+
+	private IServiceProvider ServiceProvider { get{ return (IServiceProvider)Host;}}
+
+	private IVsSolution Solution { get{ return ServiceProvider.GetService(typeof(SVsSolution)) as IVsSolution; } }
+
+	private EnvDTE.DTE Dte { get{ return (EnvDTE.DTE)ServiceProvider.GetService(typeof(EnvDTE.DTE));}}
+
+	private IEnumerable<Project> Projects { get{ return Dte.Solution.Projects.Cast<Project>(); } }
+
+	private IEnumerable<ClassModel> GetClassModels()
+	{
+        var items = Dte.ActiveDocument.ProjectItem.ContainingProject.ProjectItems.Cast<ProjectItem>().ToArray();
+        var allItems = GetAllProjectItems(items);
+        var codeElements = allItems.Where(i=> i.FileCodeModel != null).SelectMany(i=> i.FileCodeModel.CodeElements.Cast<CodeElement>());
+
+        var classModels = new List<ClassModel>();
+        foreach( var item in GetClasses(codeElements))
+        {
+            var attrs = item.Attributes.Cast<CodeAttribute>().Where(a=> a.FullName == "Rybird.Mobile.Android.Activities.ActivityLayoutAttribute").ToArray();
+
+            if(attrs.Any())
+            {
+                classModels.Add(new ClassModel
+                {
+                    Namespace = item.Namespace.FullName,
+                    Name = item.Name,
+                    Views= GetViewsFromLayouts(attrs.Select(a=> a.Value))
+                });
+            }
+        }
+
+        return classModels;
+	}
+
+    private List<ViewModel> GetViewsFromLayouts(IEnumerable<string> layouts)
+    {
+        var ns = XNamespace.Get("http://schemas.android.com/apk/res/android");
+        var directory = Path.GetDirectoryName(Dte.ActiveDocument.ProjectItem.ContainingProject.FileName);
+        var views = new List<ViewModel>();
+        foreach(var layout in layouts)
+        {
+            var paths = Path.Combine("Resources", "Layout", layout.Split('.')[2]);
+            var file = Path.Combine(directory,paths) + ".axml";
+            
+            var doc = XDocument.Load(file);
+            var attrs = doc.Descendants().Select(e=> e.Attributes(ns + "id").FirstOrDefault()).Where(a=> a != null);
+            foreach(var attr in attrs)
+            {
+				var name = GetTypeWithNamespace(attr.Parent.Name.ToString());
+				if (!string.IsNullOrEmpty(name))
+				{
+					views.Add(new ViewModel{ Name = attr.Value.Substring(5), Field = attr.Value.Substring(5), Type = name });
+				}
+            }
+        }
+        return views;
+    }
+
+	private string GetTypeWithNamespace(string parentName)
+	{
+		var t = "global::Android.Widget.";
+		if (parentName == "fragment")
+		{
+			return "";
+		}
+		else if (parentName.Contains("Rybird."))
+		{
+			return parentName;
+		}
+		else
+		{
+			return t + parentName;
+		}
+	}
+
+    private IEnumerable<CodeElement> GetNamespaces(IEnumerable<CodeElement> elements)
+    {
+        return elements.Where(e=> e.Kind == vsCMElement.vsCMElementNamespace);
+    }
+
+    private IEnumerable<ProjectItem> GetAllProjectItems(IEnumerable<ProjectItem> items)
+    {
+        foreach(var item in items)
+        {
+            yield return item as ProjectItem;
+            if(item.ProjectItems != null)
+            {
+                foreach(var child in GetAllProjectItems(item.ProjectItems.Cast<ProjectItem>()))
+                {
+                    yield return child as ProjectItem;
+                }
+            }
+        }
+    }
+
+	private IEnumerable<CodeClass> GetClasses(IEnumerable<CodeElement> elements)
+    {
+        foreach( var element in elements)
+        {
+            if(element.Kind == vsCMElement.vsCMElementNamespace || element.Kind == vsCMElement.vsCMElementClass)
+            {
+                if(element.Kind == vsCMElement.vsCMElementClass)
+                {
+                    yield return element as CodeClass;
+                }
+            }
+            if(element.Children != null)
+            {
+                foreach(var child in GetClasses(element.Children.Cast<CodeElement>()))
+                {
+                    yield return child;
+                }
+            }
+        }
+       
+    }
+
+    class ClassModel
+    {
+        public string Namespace { get; set; }
+
+        public string Name { get; set;}
+
+        public List<ViewModel> Views {get; set;}
+    }
+
+    class ViewModel
+    {
+        public string Type { get; set; }
+
+        public string Name { get; set; }
+ 
+        public string Field { get; set; }
+    }
+
+#>

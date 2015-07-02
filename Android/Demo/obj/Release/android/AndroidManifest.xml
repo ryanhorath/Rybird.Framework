@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Rybird.Framework.Android.Demo" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="11" />
+  <application android:label="Rybird.Framework.Android.Demo" android:icon="@drawable/icon" android:name="mono.android.app.Application">
+    <activity android:icon="@drawable/icon" android:label="Rybird.Framework.Android.Demo" android:name="md5be9cd27ef25964e91375204c4131d379.MainActivityView" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Rybird.Framework.Android.Demo.mono.MonoRuntimeProvider.__mono_init__" />
+    <activity android:icon="@drawable/icon" android:label="Rybird.Framework.Android.Demo" android:name="rybird.framework.android.demo.TrialSplashScreen" android:theme="@style/Mono.Android.Theme.Splash" android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

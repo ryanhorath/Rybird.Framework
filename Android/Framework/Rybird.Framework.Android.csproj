@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB839EB9-2E68-4EEE-A397-E442862E15D9}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rybird.Framework</RootNamespace>
+    <AssemblyName>Rybird.Framework.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nito.AsyncEx, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Nito.AsyncEx.3.0.0\lib\MonoAndroid\Nito.AsyncEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Concurrent, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Nito.AsyncEx.3.0.0\lib\MonoAndroid\Nito.AsyncEx.Concurrent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Enlightenment, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Nito.AsyncEx.3.0.0\lib\MonoAndroid\Nito.AsyncEx.Enlightenment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.v13, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v13.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v13.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\ActivityHelper.cs" />
+    <Compile Include="Activities\ActivityLayout1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActivityLayout.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\ActivityLayoutAttribute.cs" />
+    <Compile Include="Activities\FrameworkActivity.cs" />
+    <Compile Include="Activities\FrameworkFragmentActivity.cs" />
+    <Compile Include="Activities\IFrameworkActivity.cs" />
+    <Compile Include="Activities\ILayoutInflaterProvider.cs" />
+    <Compile Include="Adapters\IObservableAdapter.cs" />
+    <Compile Include="Adapters\ObservableAdapter.cs" />
+    <Compile Include="Adapters\ObservableAdapterFilter.cs" />
+    <Compile Include="Adapters\ObservableAdapterItem.cs" />
+    <Compile Include="Adapters\ViewHolder.cs" />
+    <Compile Include="Application\AndroidLifecycleManager.cs" />
+    <Compile Include="Application\AndroidApp.cs" />
+    <Compile Include="Bindings\ButtonBinding.cs" />
+    <Compile Include="Bindings\CompoundButtonBinding.cs" />
+    <Compile Include="Bindings\ImageButtonBinding.cs" />
+    <Compile Include="Bindings\NumberPickerBinding.cs" />
+    <Compile Include="Bindings\ProgressBarBinding.cs" />
+    <Compile Include="Bindings\PropertyBinding.cs" />
+    <Compile Include="Bindings\RadioGroupBinding.cs" />
+    <Compile Include="Bindings\TextViewBinding.cs" />
+    <Compile Include="Bindings\TextViewErrorBinding.cs" />
+    <Compile Include="Bindings\TimePickerBinding.cs" />
+    <Compile Include="Bindings\ViewBinding.cs" />
+    <Compile Include="Bindings\ViewClickableBinding.cs" />
+    <Compile Include="Bindings\ViewVisibilityBinding.cs" />
+    <Compile Include="Converters\BooleanNotConverter.cs" />
+    <Compile Include="Converters\IBindingConverter.cs" />
+    <Compile Include="Converters\VisibleIfFalseConverter.cs" />
+    <Compile Include="Converters\VisibleIfTrueConverter.cs" />
+    <Compile Include="Encryption\AndroidAesEncryptionProvider.cs" />
+    <Compile Include="Inking\SignatureData.cs" />
+    <Compile Include="Inking\SignatureState.cs" />
+    <Compile Include="Inking\SignatureView.cs" />
+    <Compile Include="JavaWrappers\JavaObjectExtensions.cs" />
+    <Compile Include="JavaWrappers\JavaWrapper.cs" />
+    <Compile Include="Navigation\BundleFacade.cs" />
+    <Compile Include="Navigation\IAndroidNavigationProvider.cs" />
+    <Compile Include="Navigation\AndroidNavigationProvider.cs" />
+    <Compile Include="Navigation\SharedPreferencesFacade.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AndroidResourcesProvider.cs" />
+    <Compile Include="Synchronization\AndroidSynchronizationProvider.cs" />
+    <Compile Include="Views\ItemsView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Activities\ActivityLayout.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ActivityLayout1.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Activities\ActivityLayout.tt.read-me.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Framework\Rybird.Framework.Core.csproj">
+      <Project>{40670796-1ddd-4b5a-8d31-37a24fb5bad5}</Project>
+      <Name>Rybird.Framework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logging\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv13-18">
+      <Visible>False</Visible>
+      <Version>20.0.0.4</Version>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

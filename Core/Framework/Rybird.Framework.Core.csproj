@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40670796-1DDD-4B5A-8D31-37A24FB5BAD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rybird.Framework</RootNamespace>
+    <AssemblyName>Rybird.Framework.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\EnumDescriptionAttribute.cs" />
+    <Compile Include="BaseClasses\IFrameworkApp.cs" />
+    <Compile Include="Attributes\RestorableStateAttribute.cs" />
+    <Compile Include="BaseClasses\BindableBase.cs" />
+    <Compile Include="BaseClasses\ModelBase.cs" />
+    <Compile Include="BaseClasses\Testing\TestModelBase.cs" />
+    <Compile Include="BaseClasses\Testing\TestViewModelBase.cs" />
+    <Compile Include="Commands\DelegateCommand.cs" />
+    <Compile Include="Commands\DelegateCommandBase.cs" />
+    <Compile Include="BaseClasses\IFrameworkPage.cs" />
+    <Compile Include="DeviceInfo\IDeviceInfoProvider.cs" />
+    <Compile Include="Collections\IReadOnlyObservableList.cs" />
+    <Compile Include="Collections\ReadOnlyDictionaryWrapper.cs" />
+    <Compile Include="Collections\SortedObservableList.cs" />
+    <Compile Include="Commands\NavigationCommand.cs" />
+    <Compile Include="Credentials\ICredentialStoreProvider.cs" />
+    <Compile Include="DeviceInfo\WindowLayoutType.cs" />
+    <Compile Include="Dialogs\ISimpleDialogProvider.cs" />
+    <Compile Include="Drawing\FrameworkOrientation.cs" />
+    <Compile Include="Encryption\IEncryptionProvider.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\EventHandlerExtensions.cs" />
+    <Compile Include="Extensions\ICollectionExtensions.cs" />
+    <Compile Include="Extensions\IComparableExtensions.cs" />
+    <Compile Include="Extensions\IDictionaryExtensions.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\IListExtensions.cs" />
+    <Compile Include="Extensions\Int32Extensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\UriExtensions.cs" />
+    <Compile Include="Extensions\ValueTypeExtensions.cs" />
+    <Compile Include="Logging\DefaultLoggingProvider.cs" />
+    <Compile Include="Observers\CollectionChangedItemObserver.cs" />
+    <Compile Include="Observers\CollectionChangedObserver.cs" />
+    <Compile Include="Observers\PropertyChangedObserver.cs" />
+    <Compile Include="RestorableState\IReadOnlyStateBucket.cs" />
+    <Compile Include="RestorableState\IStateBucket.cs" />
+    <Compile Include="RestorableState\StateDictionaryFacade.cs" />
+    <Compile Include="Synchronization\ISynchronizationProvider.cs" />
+    <Compile Include="Drawing\FrameworkColor.cs" />
+    <Compile Include="Exceptions\ValidationException.cs" />
+    <Compile Include="Drawing\FrameworkPoint.cs" />
+    <Compile Include="Drawing\FrameworkRect.cs" />
+    <Compile Include="Drawing\FrameworkSize.cs" />
+    <Compile Include="Logging\ILoggingProvider.cs" />
+    <Compile Include="Logging\LogSeverityLevel.cs" />
+    <Compile Include="Navigation\DefaultMvvmTypeResolver.cs" />
+    <Compile Include="Navigation\IMvvmTypeResolver.cs" />
+    <Compile Include="Navigation\INavigationProvider.cs" />
+    <Compile Include="Navigation\ISessionStateService.cs" />
+    <Compile Include="Resources\IResourcesProvider.cs" />
+    <Compile Include="Serializer\ISerializationProvider.cs" />
+    <Compile Include="Settings\ISettingsProvider.cs" />
+    <Compile Include="Storage\IStorageProvider.cs" />
+    <Compile Include="Utility\Guard.cs" />
+    <Compile Include="Validation\AlwaysValidValidationProvider.cs" />
+    <Compile Include="Validation\IValidationProvider.cs" />
+    <Compile Include="Validation\ValidatorFacade.cs" />
+    <Compile Include="ViewModels\PlatformProviders.cs" />
+    <Compile Include="ViewModels\EnumViewModel.cs" />
+    <Compile Include="ViewModels\FrameworkPageViewModel.cs" />
+    <Compile Include="BaseClasses\GloballyUniqueObject.cs" />
+    <Compile Include="BaseClasses\IGloballyUniqueObject.cs" />
+    <Compile Include="BaseClasses\IUniqueObject.cs" />
+    <Compile Include="BaseClasses\UniqueObject.cs" />
+    <Compile Include="BaseClasses\ViewModelBase.cs" />
+    <Compile Include="Collections\CollectionSyncer.cs" />
+    <Compile Include="Collections\IObservableList.cs" />
+    <Compile Include="Collections\ObservableList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CollectionViewModel.cs" />
+    <Compile Include="ViewModels\DialogViewModel.cs" />
+    <Compile Include="ViewModels\FrameworkViewModel.cs" />
+    <Compile Include="ViewModels\ICollectionViewModel.cs" />
+    <Compile Include="ViewModels\IDialogContentViewModel.cs" />
+    <Compile Include="ViewModels\IDialogViewModel.cs" />
+    <Compile Include="ViewModels\IPlatformProviders.cs" />
+    <Compile Include="ViewModels\IPageViewModel.cs" />
+    <Compile Include="ViewModels\IViewModel.cs" />
+    <Compile Include="ViewModels\MetroListBoxViewModel.cs" />
+    <Compile Include="WeakReferences\IWeakFuncOfT.cs" />
+    <Compile Include="WeakReferences\IWeakFunc.cs" />
+    <Compile Include="WeakReferences\IWeakActionOfT.cs" />
+    <Compile Include="WeakReferences\IWeakAction.cs" />
+    <Compile Include="WeakReferences\IWeakEventListener.cs" />
+    <Compile Include="WeakReferences\WeakFuncOfT.cs" />
+    <Compile Include="WeakReferences\WeakFunc.cs" />
+    <Compile Include="WeakReferences\WeakAction.cs" />
+    <Compile Include="WeakReferences\WeakActionOfT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bindings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nito.AsyncEx, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Nito.AsyncEx.3.0.0\lib\portable-net45+netcore45+wp8+wpa81+MonoTouch+MonoAndroid\Nito.AsyncEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Portable.DataAnnotations, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Portable.DataAnnotations.1.0.0\lib\portable-net45+netcore45+wp8+wpa81\Portable.DataAnnotations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Rx-Core.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Rx-Interfaces.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Rx-Linq.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Rx-PlatformServices.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

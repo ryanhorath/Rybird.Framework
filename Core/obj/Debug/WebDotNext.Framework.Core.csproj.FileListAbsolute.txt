@@ -1,0 +1,5 @@
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\bin\Debug\WebDotNext.Framework.Core.dll
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\bin\Debug\WebDotNext.Framework.Core.pdb
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\obj\Debug\WebDotNext.Framework.Core.dll
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\obj\Debug\WebDotNext.Framework.Core.pdb
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\obj\Debug\WebDotNext.Framework.Core.csprojResolveAssemblyReference.cache

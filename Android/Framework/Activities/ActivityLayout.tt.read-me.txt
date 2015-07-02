@@ -1,0 +1,47 @@
+﻿
+
+--- Usage ---
+
+1.	Copy Layout.tt into the Android project that contains your Acitivites
+2.	Change the class definition for your Activity to *partial*
+	Example:
+
+	public partial class MyActivity : Activity { ... }
+
+3.	Decorate the activity with the *LayoutAttribute* and specify the layout
+	Example:
+
+	[Layout(Resource.Layout.MyActivity)]
+	public partial class MyActivity : Activity { ... }	 
+
+4.	Run the text template by right clicking Layout.tt and selecting "Run Custom Tool" or from 
+	the "Build" menu select "Transform All T4 Templates". The later is generally prefered as it
+	will update everything in your solution.
+	
+
+--- Description ---
+
+Layout.tt is a t4 template that generates property accessors for views defined in an .axml layout file.
+Normally with android you need to call GetViewById<T>(int id) to get the views that are defined
+in the layout .axml for an activity. This is tedious and error prone, other frameworks 
+(Win Forms, WPF, Silverlight) genreate property accessors on partial class so that you can easily
+access these elements without having to manually call GetViewById<T>.
+
+To enable this Layout.tt generates a partial class for each Activity that is marked with the LayoutAttribute.
+It examines the name of the layout and opens the .axml looking for all elements that have an android:id attribute.
+For each element it finds it adds an accessor property to the partial class being generated. 
+
+--- Enhancement ---
+
+While funtional this solution has not been thoroughly tested. There may be layouts that do not work with this generator.
+In the short term simply remove the LayoutAttribute from your Activity and manually create the accessor properties. Then
+when time allows upadte this generator to support the additional functionality.
+
+--- Known Issues ---
+
+1.	Android allows you to specify different layouts based on the device type eg. phone vs. tablet. The generator does not yet
+	support this. The plan is to merge all the ids for all applicable layouts. This works as long as you don't have elements that
+	share the same name but are a different type.
+
+2.	This tool assumes that all controls reside in the "Android.Widget" namespace. Support for additional namespaces will require a
+	change. I assume that additional namespaces will be identified using and xml namespace so this should be achieveable.

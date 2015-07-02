@@ -1,0 +1,4 @@
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Framework\Rybird.Framework.Core.csproj;neutral
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Framework\Rybird.Framework.Core.csproj;neutral
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\WindowsRuntime\Framework\Rybird.Framework.WindowsRuntime.csproj;neutral
+C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\WindowsRuntime\Tests\Rybird.Framework.WindowsRuntime.Tests.csproj;x86
