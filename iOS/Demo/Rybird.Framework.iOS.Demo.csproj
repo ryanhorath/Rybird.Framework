@@ -6,7 +6,7 @@
     <ProjectGuid>{983427CA-0302-443E-8F17-D7F8FA1A141D}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Rybird.Framework.iOS.Demo</RootNamespace>
+    <RootNamespace>Rybird.Framework.Demo</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>RybirdFrameworkiOSDemo</AssemblyName>
     <SccProjectName>SAK</SccProjectName>

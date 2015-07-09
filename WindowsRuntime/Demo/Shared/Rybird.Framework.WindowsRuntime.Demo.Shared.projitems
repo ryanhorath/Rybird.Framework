@@ -13,7 +13,7 @@
     <SharedGUID>c7b9305e-e873-427b-800b-99fe2b24a3bd</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Rybird.Framework.WindowsRuntime.Demo</Import_RootNamespace>
+    <Import_RootNamespace>Rybird.Framework.Demo</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">

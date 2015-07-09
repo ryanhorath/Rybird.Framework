@@ -7,7 +7,7 @@
     <ProjectGuid>{92A3A499-6C49-48F4-BBFB-B36C57268015}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Rybird.Framework.WindowsRuntime.Demo</RootNamespace>
+    <RootNamespace>Rybird.Framework.Demo</RootNamespace>
     <AssemblyName>Rybird.Framework.WindowsRuntime.Demo.Windows</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
