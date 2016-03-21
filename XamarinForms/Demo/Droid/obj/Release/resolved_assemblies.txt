@@ -1,77 +1,39 @@
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Droid\bin\Release\Rybird.Framework.XamarinForms.Demo.Droid.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\FormsViewGroup.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v5.0\Mono.Android.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\mscorlib.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\packages\Nito.AsyncEx.3.0.0\lib\MonoAndroid\Nito.AsyncEx.Concurrent.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\packages\Nito.AsyncEx.3.0.0\lib\MonoAndroid\Nito.AsyncEx.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\packages\Nito.AsyncEx.3.0.0\lib\MonoAndroid\Nito.AsyncEx.Enlightenment.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Shared\bin\Release\Rybird.Framework.XamarinForms.Demo.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Framework\bin\Release\Rybird.Framework.XamarinForms.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Core.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Xml.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Xml.Linq.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Core.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.Annotations.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.EventBasedAsync.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Contracts.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Debug.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Tools.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Tracing.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Dynamic.Runtime.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Globalization.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.IO.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Expressions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Parallel.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Queryable.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.NetworkInformation.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.Primitives.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.Requests.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ObjectModel.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.ILGeneration.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.Lightweight.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Extensions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Primitives.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Resources.ResourceManager.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Extensions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.InteropServices.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.InteropServices.WindowsRuntime.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Numerics.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Json.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Primitives.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Xml.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Security.Principal.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Http.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Primitives.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Security.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.Encoding.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.Encoding.Extensions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.RegularExpressions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Tasks.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Tasks.Parallel.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Timer.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.ReaderWriter.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.XDocument.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.XmlSerializer.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Droid\bin\Release\Portable.DataAnnotations.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Droid\bin\Release\System.Reactive.Linq.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Droid\bin\Release\System.Reactive.Core.dll
-C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Droid\bin\Release\System.Reactive.Interfaces.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Runtime.Serialization.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Net.Http.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.ComponentModel.DataAnnotations.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.ComponentModel.Composition.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Numerics.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.ServiceModel.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Rybird.Framework.XamarinForms.Demo.Droid.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\FormsViewGroup.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Mono.Android.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\mscorlib.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Nito.AsyncEx.Concurrent.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Nito.AsyncEx.Enlightenment.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Rybird.Framework.XamarinForms.Demo.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Rybird.Framework.XamarinForms.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Xml.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Xml.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Android.Support.Design.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Android.Support.v13.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Android.Support.v4.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.CardView.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Forms.Platform.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Diagnostics.Tracing.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Reflection.Emit.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Reflection.Emit.ILGeneration.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Reflection.Emit.Lightweight.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.ServiceModel.Security.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Threading.Timer.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Runtime.Serialization.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.ServiceModel.Internals.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.Net.Http.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.ComponentModel.DataAnnotations.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Droid\obj\Release\android\assets\System.ServiceModel.dll

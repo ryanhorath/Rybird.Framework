@@ -21,3 +21,25 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Tests\bin\Rel
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Tests\obj\Release\Rybird.Framework.XamarinForms.Tests.csprojResolveAssemblyReference.cache
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Tests\obj\Release\Rybird.Framework.XamarinForms.Tests.dll
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Tests\obj\Release\Rybird.Framework.XamarinForms.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\obj\Release\Rybird.Framework.XamarinForms.Tests.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\obj\Release\Rybird.Framework.XamarinForms.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Rybird.Framework.XamarinForms.Tests.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Rybird.Framework.XamarinForms.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Rybird.Framework.XamarinForms.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Xamarin.Forms.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Xamarin.Forms.Platform.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Xamarin.Forms.Xaml.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Rybird.Framework.XamarinForms.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Xamarin.Forms.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Xamarin.Forms.Xaml.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\Nito.AsyncEx.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\bin\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Tests\obj\Release\Rybird.Framework.XamarinForms.Tests.csprojResolveAssemblyReference.cache

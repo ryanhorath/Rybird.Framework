@@ -17,3 +17,36 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Framework\bin\Release
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.csprojResolveAssemblyReference.cache
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Newtonsoft.Json.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Nito.AsyncEx.Concurrent.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\System.Reactive.PlatformServices.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Newtonsoft.Json.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Nito.AsyncEx.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Nito.AsyncEx.Concurrent.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\System.Reactive.PlatformServices.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.csprojResolveAssemblyReference.cache
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\obj\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Framework\bin\Release\Rybird.Framework.Core.dll.mdb

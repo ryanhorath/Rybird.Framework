@@ -37,12 +37,12 @@ namespace Rybird.Framework
 
         public TimeSpan Time
         {
-            get { return new TimeSpan(_target.CurrentHour.IntValue(), _target.CurrentMinute.IntValue(), 0); }
+            get { return new TimeSpan(_target.Hour, _target.Minute, 0); }
             set
             {
                 _isUpdating = true;
-                _target.CurrentHour = new Java.Lang.Integer(value.Hours);
-                _target.CurrentMinute = new Java.Lang.Integer(value.Minutes);
+                _target.Hour = value.Hours;
+                _target.Minute = value.Minutes;
                 _isUpdating = false;
             }
         }

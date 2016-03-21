@@ -31,3 +31,37 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Android\Tests\obj\Release\
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Android\Tests\obj\Release\res\values\strings.xml
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Android\Tests\obj\Release\R.cs.flag
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Android\Tests\obj\Release\uploadflags.txt
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\Rybird.Framework.Android.Tests.csprojResolveAssemblyReference.cache
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\Rybird.Framework.Android.Tests.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\Rybird.Framework.Android.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.Tests.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.Tests.apk
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.Tests-Signed.apk
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Xamarin.Android.Support.v4.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Newtonsoft.Json.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Nito.AsyncEx.Enlightenment.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.pdb
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Newtonsoft.Json.xml
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Nito.AsyncEx.xml
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Nito.AsyncEx.Enlightenment.xml
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\res\drawable\monoandroidsplash.png
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\res\values\styles.xml
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\android\bin\Rybird.Framework.Android.Tests.apk
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\res\drawable\icon.png
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\res\values\strings.xml
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\R.cs.flag
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\uploadflags.txt
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\Rybird.Framework.Android.Tests.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.Tests.dll.mdb

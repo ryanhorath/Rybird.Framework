@@ -34,3 +34,39 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Tests\bin\Release\Moq
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.xml
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.AutoMoq.xml
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.Xunit.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\obj\Release\Rybird.Framework.Core.Tests.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\obj\Release\Rybird.Framework.Core.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.abstractions.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.runner.visualstudio.testadapter.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.runner.utility.desktop.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Rybird.Framework.Core.Tests.dll.config
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Rybird.Framework.Core.Tests.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Rybird.Framework.Core.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Moq.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.AutoMoq.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.Xunit.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.assert.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.core.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.execution.desktop.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.extensions.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Moq.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.AutoMoq.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\Ploeh.AutoFixture.Xunit.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.assert.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.assert.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.core.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.core.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.execution.desktop.pdb
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.execution.desktop.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\xunit.extensions.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\bin\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\Core\Tests\obj\Release\Rybird.Framework.Core.Tests.csprojResolveAssemblyReference.cache

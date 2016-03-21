@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using DemoResource = Rybird.Framework.Demo.Resource;
 
 namespace Rybird.Framework.Android.Demo.Views
 {
@@ -18,15 +19,15 @@ namespace Rybird.Framework.Android.Demo.Views
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(DemoResource.Layout.Main);
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            Button button = FindViewById<Button>(DemoResource.Id.MyButton);
 
             button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
 
-            var edit = FindViewById<EditText>(Resource.Id.MyEditText);
+            var edit = FindViewById<EditText>(DemoResource.Id.MyEditText);
             
         }
     }

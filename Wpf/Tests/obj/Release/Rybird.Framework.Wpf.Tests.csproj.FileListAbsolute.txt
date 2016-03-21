@@ -19,3 +19,22 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Wpf\Tests\bin\Release\Nito
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Wpf\Tests\obj\Release\Rybird.Framework.Wpf.Tests.dll
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Wpf\Tests\obj\Release\Rybird.Framework.Wpf.Tests.pdb
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Wpf\Tests\obj\Release\Rybird.Framework.Wpf.Tests.csprojResolveAssemblyReference.cache
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Rybird.Framework.Wpf.Tests.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Rybird.Framework.Wpf.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Rybird.Framework.Wpf.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Nito.AsyncEx.Enlightenment.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Rybird.Framework.Wpf.pdb
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Nito.AsyncEx.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\bin\Release\Nito.AsyncEx.Enlightenment.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\obj\Release\Rybird.Framework.Wpf.Tests.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\obj\Release\Rybird.Framework.Wpf.Tests.pdb
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Tests\obj\Release\Rybird.Framework.Wpf.Tests.csprojResolveAssemblyReference.cache

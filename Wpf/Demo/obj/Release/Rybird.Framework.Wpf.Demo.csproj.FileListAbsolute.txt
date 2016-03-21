@@ -27,3 +27,30 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Wpf\Demo\obj\Release\Rybir
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo.csproj.GenerateResource.Cache
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo.exe
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo.pdb
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Rybird.Framework.Wpf.Demo.exe.config
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Rybird.Framework.Wpf.Demo.exe
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Rybird.Framework.Wpf.Demo.pdb
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Rybird.Framework.Wpf.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Nito.AsyncEx.Enlightenment.dll
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Rybird.Framework.Wpf.pdb
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Nito.AsyncEx.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\bin\Release\Nito.AsyncEx.Enlightenment.xml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo.csprojResolveAssemblyReference.cache
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\MainWindow.baml
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\MainWindow.g.cs
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\App.g.cs
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo_MarkupCompile.cache
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo.g.resources
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Demo.Properties.Resources.resources
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo.csproj.GenerateResource.Cache
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo.exe
+D:\Source Control\GitHub\Rybird.Framework\Wpf\Demo\obj\Release\Rybird.Framework.Wpf.Demo.pdb

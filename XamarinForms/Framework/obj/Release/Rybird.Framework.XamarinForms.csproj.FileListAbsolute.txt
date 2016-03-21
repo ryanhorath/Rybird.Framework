@@ -22,3 +22,29 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Framework\bin
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Framework\obj\Release\Rybird.Framework.XamarinForms.csprojResolveAssemblyReference.cache
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Framework\obj\Release\Rybird.Framework.XamarinForms.dll
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Framework\obj\Release\Rybird.Framework.XamarinForms.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\obj\Release\Rybird.Framework.XamarinForms.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\obj\Release\Rybird.Framework.XamarinForms.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Rybird.Framework.XamarinForms.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Rybird.Framework.XamarinForms.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Newtonsoft.Json.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Nito.AsyncEx.Concurrent.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Xamarin.Forms.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Xamarin.Forms.Platform.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Xamarin.Forms.Xaml.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Newtonsoft.Json.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Nito.AsyncEx.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Nito.AsyncEx.Concurrent.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Xamarin.Forms.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Xamarin.Forms.Xaml.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\obj\Release\Rybird.Framework.XamarinForms.csprojResolveAssemblyReference.cache
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\obj\Release\Rybird.Framework.XamarinForms.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Framework\bin\Release\Rybird.Framework.XamarinForms.dll.mdb

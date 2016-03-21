@@ -7,8 +7,8 @@ public class ObservableAdapter_1
 		mono.android.IGCUserPeer,
 		android.widget.Filterable,
 		android.widget.ListAdapter,
-		android.widget.SpinnerAdapter,
-		android.widget.Adapter
+		android.widget.Adapter,
+		android.widget.SpinnerAdapter
 {
 	static final String __md_methods;
 	static {
@@ -20,13 +20,13 @@ public class ObservableAdapter_1
 			"n_getFilter:()Landroid/widget/Filter;:GetGetFilterHandler:Android.Widget.IFilterableInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_areAllItemsEnabled:()Z:GetAreAllItemsEnabledHandler:Android.Widget.IListAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_isEnabled:(I)Z:GetIsEnabled_IHandler:Android.Widget.IListAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
-			"n_getDropDownView:(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;:GetGetDropDownView_ILandroid_view_View_Landroid_view_ViewGroup_Handler:Android.Widget.ISpinnerAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_hasStableIds:()Z:GetHasStableIdsHandler:Android.Widget.IAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_isEmpty:()Z:GetIsEmptyHandler:Android.Widget.IAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_getViewTypeCount:()I:GetGetViewTypeCountHandler:Android.Widget.IAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_getItemViewType:(I)I:GetGetItemViewType_IHandler:Android.Widget.IAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_registerDataSetObserver:(Landroid/database/DataSetObserver;)V:GetRegisterDataSetObserver_Landroid_database_DataSetObserver_Handler:Android.Widget.IAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_unregisterDataSetObserver:(Landroid/database/DataSetObserver;)V:GetUnregisterDataSetObserver_Landroid_database_DataSetObserver_Handler:Android.Widget.IAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
+			"n_getDropDownView:(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;:GetGetDropDownView_ILandroid_view_View_Landroid_view_ViewGroup_Handler:Android.Widget.ISpinnerAdapterInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"";
 		mono.android.Runtime.register ("Rybird.Framework.ObservableAdapter`1, Rybird.Framework.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ObservableAdapter_1.class, __md_methods);
 	}
@@ -96,14 +96,6 @@ public class ObservableAdapter_1
 	private native boolean n_isEnabled (int p0);
 
 
-	public android.view.View getDropDownView (int p0, android.view.View p1, android.view.ViewGroup p2)
-	{
-		return n_getDropDownView (p0, p1, p2);
-	}
-
-	private native android.view.View n_getDropDownView (int p0, android.view.View p1, android.view.ViewGroup p2);
-
-
 	public boolean hasStableIds ()
 	{
 		return n_hasStableIds ();
@@ -150,6 +142,14 @@ public class ObservableAdapter_1
 	}
 
 	private native void n_unregisterDataSetObserver (android.database.DataSetObserver p0);
+
+
+	public android.view.View getDropDownView (int p0, android.view.View p1, android.view.ViewGroup p2)
+	{
+		return n_getDropDownView (p0, p1, p2);
+	}
+
+	private native android.view.View n_getDropDownView (int p0, android.view.View p1, android.view.ViewGroup p2);
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

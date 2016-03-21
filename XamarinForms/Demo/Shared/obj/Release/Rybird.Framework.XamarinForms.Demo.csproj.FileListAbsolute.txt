@@ -21,3 +21,27 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Shared\b
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Shared\obj\Release\Rybird.Framework.XamarinForms.Demo.csprojResolveAssemblyReference.cache
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Shared\obj\Release\Rybird.Framework.XamarinForms.Demo.dll
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\XamarinForms\Demo\Shared\obj\Release\Rybird.Framework.XamarinForms.Demo.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\obj\Release\Rybird.Framework.XamarinForms.Demo.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\obj\Release\Rybird.Framework.XamarinForms.Demo.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Rybird.Framework.XamarinForms.Demo.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Rybird.Framework.XamarinForms.Demo.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Rybird.Framework.XamarinForms.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Xamarin.Forms.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Xamarin.Forms.Xaml.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Xamarin.Forms.Platform.dll
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Rybird.Framework.XamarinForms.pdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Xamarin.Forms.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Xamarin.Forms.Xaml.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Nito.AsyncEx.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\obj\Release\Rybird.Framework.XamarinForms.Demo.csprojResolveAssemblyReference.cache
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\obj\Release\Rybird.Framework.XamarinForms.Demo.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\XamarinForms\Demo\Shared\bin\Release\Rybird.Framework.XamarinForms.Demo.dll.mdb

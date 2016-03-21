@@ -21,3 +21,26 @@ C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\iOS\Tests\bin\iPhone\Relea
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\iOS\Tests\obj\iPhone\Release\
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\iOS\Tests\obj\iPhone\Release\Rybird.Framework.iOS.Tests.csprojResolveAssemblyReference.cache
 C:\HomeProjects\Rybird.Framework\WebDotNext.Framework\iOS\Tests\obj\iPhone\Release\RybirdFrameworkiOSTests.exe
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\RybirdFrameworkiOSTests.exe.config
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\RybirdFrameworkiOSTests.exe
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Rybird.Framework.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Rybird.Framework.iOS.dll
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\System.Reactive.Linq.dll
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\System.Reactive.Core.dll
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Newtonsoft.Json.dll
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Nito.AsyncEx.dll
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\System.Reactive.Interfaces.dll
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Rybird.Framework.Core.pdb
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\System.Reactive.Linq.xml
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\System.Reactive.Core.xml
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Newtonsoft.Json.xml
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Nito.AsyncEx.xml
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\System.Reactive.Interfaces.xml
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\obj\iPhone\Release\optimized\
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\obj\iPhone\Release\Rybird.Framework.iOS.Tests.csprojResolveAssemblyReference.cache
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\obj\iPhone\Release\RybirdFrameworkiOSTests.exe
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Nito.AsyncEx.Enlightenment.dll
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\Nito.AsyncEx.Enlightenment.xml
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\obj\iPhone\Release\RybirdFrameworkiOSTests.exe.mdb
+D:\Source Control\GitHub\Rybird.Framework\iOS\Tests\bin\iPhone\Release\RybirdFrameworkiOSTests.exe.mdb
