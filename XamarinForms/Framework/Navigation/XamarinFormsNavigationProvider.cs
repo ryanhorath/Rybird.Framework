@@ -99,14 +99,14 @@ namespace Rybird.Framework
             return true;
         }
 
-        public bool IsUpNavigationSupported
+        public bool CanOpenWindow
         {
             get { return false; }
         }
 
-        public Task<bool> GoUpAsync()
+        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
         {
-            throw new NotImplementedException("Up navigation is not supported in Xamarin Forms.");
+            throw new NotSupportedException();
         }
 
         public bool CanGoUp

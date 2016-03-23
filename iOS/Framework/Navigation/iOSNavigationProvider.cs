@@ -57,7 +57,7 @@ namespace Rybird.Framework
             return Task.FromResult<bool>(true);
         }
 
-        public bool IsUpNavigationSupported { get { return false; } }
+        public bool CanOpenWindow { get { return false; } }
 
         public bool CanGoBack { get { return true; } }
 
@@ -67,9 +67,9 @@ namespace Rybird.Framework
             return Task.FromResult<bool>(true);
         }
 
-        public Task<bool> GoUpAsync()
+        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
         {
-            throw new NotImplementedException("iOS does not support up navigation.");
+            throw new NotSupportedException();
         }
 
         public bool CanGoUp

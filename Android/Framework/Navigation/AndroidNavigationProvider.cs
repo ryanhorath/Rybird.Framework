@@ -81,15 +81,14 @@ namespace Rybird.Framework
             return TaskConstants.BooleanTrue;
         }
 
-        public Task<bool> GoUpAsync()
+        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
         {
-            NavUtils.NavigateUpFromSameTask(_currentActivity.Activity);
-            return TaskConstants.BooleanTrue;
+            throw new NotSupportedException();
         }
 
-        public bool IsUpNavigationSupported 
+        public bool CanOpenWindow
         { 
-            get { return true; }
+            get { return false; }
         }
 
         // Not needed on Android

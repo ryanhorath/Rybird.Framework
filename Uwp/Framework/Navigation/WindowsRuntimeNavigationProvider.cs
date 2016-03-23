@@ -69,9 +69,10 @@ namespace Rybird.Framework
             return TaskConstants.BooleanTrue;
         }
 
-        public Task<bool> GoUpAsync()
+        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
         {
-            throw new NotImplementedException("GoUpAsync() is not supported in Windows Runtime apps.");
+            // TODO: Create new window here
+            return Task.CompletedTask;
         }
 
         public bool CanGoBack
@@ -79,9 +80,9 @@ namespace Rybird.Framework
             get { return _frame.CanGoBack; }
         }
 
-        public bool IsUpNavigationSupported
+        public bool CanOpenWindow
         {
-            get { return false; }
+            get { return true; }
         }
 
         public async Task LoadState()

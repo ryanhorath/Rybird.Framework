@@ -6,6 +6,7 @@ using System.Reflection;
 using Nito.AsyncEx;
 using System.Windows.Controls;
 using System.Windows.Navigation;
+using System.Windows;
 
 namespace Rybird.Framework
 {
@@ -74,9 +75,10 @@ namespace Rybird.Framework
             return TaskConstants.BooleanTrue;
         }
 
-        public Task<bool> GoUpAsync()
+        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
         {
-            throw new NotImplementedException("GoUpAsync() is not supported in WPF apps.");
+            var window = new Window();
+            return Task.CompletedTask;
         }
 
         public bool CanGoBack
@@ -84,9 +86,9 @@ namespace Rybird.Framework
             get { return _navigationService.CanGoBack; }
         }
 
-        public bool IsUpNavigationSupported
+        public bool CanOpenWindow
         {
-            get { return false; }
+            get { return true; }
         }
 
         public Task LoadState()
