@@ -77,17 +77,22 @@ namespace Rybird.Framework
             get { return _platformProviders ?? (_platformProviders = new PlatformProviders(Navigation, Synchronization, ResourcesProvider, null)); }
         }
 
+        protected override void OnActivated(IActivatedEventArgs args)
+        {
+            InitializeFrame(args);
+        }
+
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override async void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs args)
         {
-            InitializeFrameAsync(e);
+            InitializeFrame(args);
             // Restore the app if necessary, otherwise navigate to main page
-            if (e.PreviousExecutionState == ApplicationExecutionState.Terminated
-                && ShouldAppRestoreAfterTermination(e.Kind))
+            if (args.PreviousExecutionState == ApplicationExecutionState.Terminated
+                && ShouldAppRestoreAfterTermination(args.Kind))
             {
                 try
                 {
@@ -101,7 +106,7 @@ namespace Rybird.Framework
             }
             else
             {
-                await Navigation.NavigateAsync(_mainPageViewModelType, e.Arguments);
+                await Navigation.NavigateAsync(_mainPageViewModelType, args.Arguments);
             }
             Window.Current.Activate();
         }
@@ -113,7 +118,7 @@ namespace Rybird.Framework
             return Activator.CreateInstance(type, PlatformProviders) as FrameworkPageViewModel;
         }
 
-        protected void InitializeFrameAsync(IActivatedEventArgs args)
+        protected void InitializeFrame(IActivatedEventArgs args)
         {
             if (RootFrame == null && Window.Current.Content == null)
             {
