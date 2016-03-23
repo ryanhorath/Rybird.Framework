@@ -63,5 +63,6 @@ D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\res\values\s
 D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\R.cs.flag
 D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\uploadflags.txt
 D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Core.dll.mdb
+D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.dll.mdb
 D:\Source Control\GitHub\Rybird.Framework\Android\Tests\obj\Release\Rybird.Framework.Android.Tests.dll.mdb
 D:\Source Control\GitHub\Rybird.Framework\Android\Tests\bin\Release\Rybird.Framework.Android.Tests.dll.mdb
