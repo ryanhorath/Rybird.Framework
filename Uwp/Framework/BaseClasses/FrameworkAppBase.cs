@@ -66,9 +66,9 @@ namespace Rybird.Framework
             get { return _resources ?? (_resources = new ResourcesFacade(ResourceLoader.GetForViewIndependentUse(Constants.StoreAppsInfrastructureResourceMapId))); }
         }
 
-        protected virtual INavigationProvider CreateNavigationManager(Frame frame, IMvvmTypeResolver typeResolver)
+        protected virtual INavigationProvider CreateNavigationManager(Window window, IMvvmTypeResolver typeResolver)
         {
-            return new WindowsRuntimeNavigationProvider(this, frame, typeResolver, PlatformProviders);
+            return new WindowsRuntimeNavigationProvider(this, window, typeResolver, PlatformProviders);
         }
 
         private IPlatformProviders _platformProviders;
@@ -124,9 +124,9 @@ namespace Rybird.Framework
             {
                 RootFrame = new Frame();
                 RootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
-                Navigation = CreateNavigationManager(RootFrame, TypeResolver);
-                OnInitialize(args);
                 Window.Current.Content = RootFrame;
+                Navigation = CreateNavigationManager(Window.Current, TypeResolver);
+                OnInitialize(args);
             }
             else
             {

@@ -9,23 +9,28 @@ using Windows.UI.Xaml.Controls;
 using System.Threading.Tasks;
 using System.Reflection;
 using Nito.AsyncEx;
+using Windows.ApplicationModel.Core;
+using Windows.UI.ViewManagement;
+using Windows.UI.Core;
 
 namespace Rybird.Framework
 {
     public class WindowsRuntimeNavigationProvider : BindableBase, INavigationProvider
     {
+        private readonly Window _window;
         private readonly Frame _frame;
         private readonly ISessionStateService _sessionStateService;
         private readonly IMvvmTypeResolver _typeResolver;
         private IFrameworkApp _application;
 
-        public WindowsRuntimeNavigationProvider(IFrameworkApp application, Frame frame, IMvvmTypeResolver typeResolver, IPlatformProviders platformProviders)
+        public WindowsRuntimeNavigationProvider(IFrameworkApp application, Window window, IMvvmTypeResolver typeResolver, IPlatformProviders platformProviders)
         {
             _application = application;
-            _frame = frame;
+            _window = window;
+            _frame = (Frame)window.Content;
             _typeResolver = typeResolver;
             _platformProviders = platformProviders;
-            _sessionStateService = new SessionStateService(frame);
+            _sessionStateService = new SessionStateService(_frame);
             _frame.Navigated += MainFrame_Navigated;
         }
 
@@ -69,10 +74,21 @@ namespace Rybird.Framework
             return TaskConstants.BooleanTrue;
         }
 
-        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
+        public async Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
         {
-            // TODO: Create new window here
-            return Task.CompletedTask;
+            var newCoreView = CoreApplication.CreateNewView();
+
+            ApplicationView newAppView = null;
+            var currentViewId = ApplicationView.GetApplicationViewIdForWindow(_window.CoreWindow);
+
+            await newCoreView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+                {
+                    newAppView = ApplicationView.GetForCurrentView();
+                    Window.Current.Content = new Frame();
+                    Window.Current.Activate();
+                });
+
+            await ApplicationViewSwitcher.TryShowAsStandaloneAsync(newAppView.Id, ViewSizePreference.UseHalf, currentViewId, ViewSizePreference.UseHalf);
         }
 
         public bool CanGoBack
