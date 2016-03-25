@@ -16,12 +16,13 @@ namespace Rybird.Framework
 
         public AndroidNavigationProvider(
             IMvvmTypeResolver typeResolver,
-            IPlatformProviders platformProviders)
+            ISynchronizationProvider synchronizationProvider,
+            IResourcesProvider resourcesProvider,
+            IDeviceInfoProvider deviceInfoProvider)
         {
             _typeResolver = typeResolver;
-            _platformProviders = platformProviders;
+            _platformProviders = new PlatformProviders(this, synchronizationProvider, resourcesProvider, deviceInfoProvider);
         }
-
 
         public virtual bool InitializeActivity(IFrameworkActivity activity)
         {

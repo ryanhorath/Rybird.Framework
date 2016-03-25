@@ -10,7 +10,7 @@ using System.Windows;
 
 namespace Rybird.Framework
 {
-    public class WpfNavigationProvider : BindableBase, INavigationProvider
+    public class WpfNavigationProvider : INavigationProvider
     {
         private readonly NavigationService _navigationService;
         private readonly IMvvmTypeResolver _typeResolver;
@@ -18,12 +18,13 @@ namespace Rybird.Framework
         private IWpfFrameworkPage _currentPage;
 
         public WpfNavigationProvider(NavigationService navigationService, IMvvmTypeResolver typeResolver, 
-            IPlatformProviders platformProviders)
+            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider,
+            IDeviceInfoProvider deviceInfoProvider)
         {
             _navigationService.ThrowIfNull("navigationService");
             _navigationService = navigationService;
             _typeResolver = typeResolver;
-            _platformProviders = platformProviders;
+            _platformProviders = new PlatformProviders(this, synchronizationProvider, resourcesProvider, deviceInfoProvider);
             _navigationService.Navigated += MainFrame_Navigated;
         }
 
@@ -75,38 +76,9 @@ namespace Rybird.Framework
             return TaskConstants.BooleanTrue;
         }
 
-        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
-        {
-            var window = new Window();
-            return Task.CompletedTask;
-        }
-
         public bool CanGoBack
         {
             get { return _navigationService.CanGoBack; }
         }
-
-        public bool CanOpenWindow
-        {
-            get { return true; }
-        }
-
-        public Task LoadState()
-        {
-            return TaskConstants.Completed;
-        }
-
-        public Task SaveState()
-        {
-            IsSuspending = true;
-            return TaskConstants.Completed;
-        }
-
-        private bool _isSuspending = false;
-        public bool IsSuspending
-        {
-            get { return _isSuspending; }
-            set { SetProperty<bool>(ref _isSuspending, value); }
-        } 
     }
 }

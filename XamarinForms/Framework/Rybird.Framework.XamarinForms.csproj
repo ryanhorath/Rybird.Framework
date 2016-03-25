@@ -45,6 +45,7 @@
     <Compile Include="Converters\BooleanNotConverter.cs" />
     <Compile Include="Converters\TrueIfStringNotNullOrEmptyConverter.cs" />
     <Compile Include="Dialogs\XamarinFormsSimpleDialogProvider.cs" />
+    <Compile Include="Lifecycle\XamarinFormsLifecycleProvider.cs" />
     <Compile Include="Navigation\IXamarinFormsNavigationProivder.cs" />
     <Compile Include="Navigation\IXamarinFormsPageStateProvider.cs" />
     <Compile Include="Navigation\XamarinFormsNavigationProvider.cs" />

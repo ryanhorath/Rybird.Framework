@@ -1,21 +1,14 @@
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using Rybird.Framework;
-using Windows.ApplicationModel.Resources;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Threading.Tasks;
-using System.Reflection;
 using Nito.AsyncEx;
-using Windows.ApplicationModel.Core;
-using Windows.UI.ViewManagement;
-using Windows.UI.Core;
 
 namespace Rybird.Framework
 {
-    public class WindowsRuntimeNavigationProvider : BindableBase, INavigationProvider
+    public class UwpNavigationProvider : INavigationProvider
     {
         private readonly Window _window;
         private readonly Frame _frame;
@@ -23,13 +16,13 @@ namespace Rybird.Framework
         private readonly IMvvmTypeResolver _typeResolver;
         private IFrameworkApp _application;
 
-        public WindowsRuntimeNavigationProvider(IFrameworkApp application, Window window, IMvvmTypeResolver typeResolver, IPlatformProviders platformProviders)
+        public UwpNavigationProvider(Window window, IMvvmTypeResolver typeResolver,
+            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider, IDeviceInfoProvider deviceInfoProvider)
         {
-            _application = application;
             _window = window;
             _frame = (Frame)window.Content;
             _typeResolver = typeResolver;
-            _platformProviders = platformProviders;
+            _platformProviders = new PlatformProviders(this, synchronizationProvider, resourcesProvider, deviceInfoProvider);
             _sessionStateService = new SessionStateService(_frame);
             _frame.Navigated += MainFrame_Navigated;
         }
@@ -69,55 +62,13 @@ namespace Rybird.Framework
 
         public Task<bool> GoBackAsync()
         {
-            
             _frame.GoBack();
             return TaskConstants.BooleanTrue;
-        }
-
-        public async Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
-        {
-            var newCoreView = CoreApplication.CreateNewView();
-
-            ApplicationView newAppView = null;
-            var currentViewId = ApplicationView.GetApplicationViewIdForWindow(_window.CoreWindow);
-
-            await newCoreView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-                {
-                    newAppView = ApplicationView.GetForCurrentView();
-                    Window.Current.Content = new Frame();
-                    Window.Current.Activate();
-                });
-
-            await ApplicationViewSwitcher.TryShowAsStandaloneAsync(newAppView.Id, ViewSizePreference.UseHalf, currentViewId, ViewSizePreference.UseHalf);
         }
 
         public bool CanGoBack
         {
             get { return _frame.CanGoBack; }
         }
-
-        public bool CanOpenWindow
-        {
-            get { return true; }
-        }
-
-        public async Task LoadState()
-        {
-            await _sessionStateService.RestoreSessionStateAsync();
-            _sessionStateService.RestoreFrameState();
-        }
-
-        public async Task SaveState()
-        {
-            IsSuspending = true;
-            await _sessionStateService.SaveAsync();
-        }
-
-        private bool _isSuspending = false;
-        public bool IsSuspending
-        {
-            get { return _isSuspending; }
-            set { SetProperty<bool>(ref _isSuspending, value); }
-        } 
     }
 }

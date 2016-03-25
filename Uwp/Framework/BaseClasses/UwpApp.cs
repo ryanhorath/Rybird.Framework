@@ -40,10 +40,12 @@ namespace Rybird.Framework
         private ISynchronizationProvider _synchronization;
         private IDeviceInfoProvider _deviceInfo;
         private IResourcesProvider _resources;
+        private ILifecycleProvider _lifecycleProvider;
 
-        protected virtual INavigationProvider CreateNavigationManager(Frame frame, IMvvmTypeResolver typeResolver, IPlatformProviders platformProviders)
+        protected virtual INavigationProvider CreateNavigationManager(Window window, IMvvmTypeResolver typeResolver, 
+            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider, IDeviceInfoProvider deviceInfoProvider)
         {
-            return new WindowsRuntimeNavigationProvider(this, frame, typeResolver, platformProviders);
+            return new UwpNavigationProvider(window, typeResolver, synchronizationProvider, resourcesProvider, deviceInfoProvider);
         }
 
         // Called only when app is launched through the app's main tile
@@ -57,7 +59,7 @@ namespace Rybird.Framework
             {
                 try
                 {
-                    await NavigationProvider.LoadState();
+                    await _lifecycleProvider.LoadState();
                 }
                 catch (SessionStateServiceException)
                 {
@@ -84,12 +86,8 @@ namespace Rybird.Framework
             _resources = new WindowsRuntimeResourcesProvider(ResourceLoader.GetForViewIndependentUse(Constants.StoreAppsInfrastructureResourceMapId));
             _typeResolver = new DefaultMvvmTypeResolver();
             _deviceInfo = new DeviceInfoProvider();
-            _navigationProvider = CreateNavigationManager(RootFrame, _typeResolver, new PlatformProviders(GetNavigationProvider, _synchronization, _resources, _deviceInfo));
-        }
-
-        private INavigationProvider GetNavigationProvider()
-        {
-            return _navigationProvider;
+            _lifecycleProvider = new UwpLifecycleProvider(_typeResolver, _synchronization, _resources, _deviceInfo);
+            _navigationProvider = CreateNavigationManager(Window.Current, _typeResolver, _synchronization, _resources, _deviceInfo);
         }
 
         private FrameworkPageViewModel DefaultViewModelResolver(Type type)
@@ -129,7 +127,7 @@ namespace Rybird.Framework
             try
             {
                 var deferral = e.SuspendingOperation.GetDeferral();
-                await _navigationProvider.SaveState();
+                await _lifecycleProvider.SaveState();
                 await OnSuspend();
                 deferral.Complete();
             }

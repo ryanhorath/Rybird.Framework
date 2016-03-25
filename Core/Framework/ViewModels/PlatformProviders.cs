@@ -1,25 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Rybird.Framework
 {
     public class PlatformProviders : IPlatformProviders
     {
-        public PlatformProviders(Func<INavigationProvider> navigationCallback, ISynchronizationProvider synchronization, IResourcesProvider resources, IDeviceInfoProvider deviceInfo)
-        {
-            navigationCallback.ThrowIfNull("navigationCallback");
-            _navigationCallback = navigationCallback;
-            synchronization.ThrowIfNull("synchronization");
-            _synchronization = synchronization;
-            resources.ThrowIfNull("resources");
-            _resources = resources;
-            deviceInfo.ThrowIfNull("deviceInfo");
-            _deviceInfo = deviceInfo;
-        }
-
         public PlatformProviders(INavigationProvider navigation, ISynchronizationProvider synchronization, IResourcesProvider resources, IDeviceInfoProvider deviceInfo)
         {
             navigation.ThrowIfNull("navigation");

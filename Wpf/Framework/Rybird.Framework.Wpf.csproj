@@ -85,6 +85,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lifecycle\WpfLifecycleProvider.cs" />
     <Compile Include="Resources\WpfResourcesProvider.cs" />
     <Compile Include="Synchronization\SynchronizationProvider.cs" />
     <Page Include="Themes\Generic.xaml">

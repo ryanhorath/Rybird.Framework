@@ -50,6 +50,7 @@
     <Compile Include="Controllers\NSCoderFacade.cs" />
     <Compile Include="Controllers\iOSViewControllerHelper.cs" />
     <Compile Include="Encryption\iOSAesEncryptionProvider.cs" />
+    <Compile Include="Lifecycle\iOSLifecycleProvider.cs" />
     <Compile Include="Logging\iOSConsoleAppender.cs" />
     <Compile Include="Logging\iOSFileAppender.cs" />
     <Compile Include="Navigation\iOSNavigationProvider.cs" />

@@ -108,10 +108,9 @@
     <PRIResource Include="Strings\en-us\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClasses\FrameworkAppBase.cs" />
     <Compile Include="BaseClasses\FrameworkPage.cs" />
     <Compile Include="BaseClasses\IWindowsRuntimeFrameworkPage.cs" />
-    <Compile Include="BaseClasses\WindowsRuntimeApp.cs" />
+    <Compile Include="BaseClasses\UwpApp.cs" />
     <Compile Include="BaseClasses\WindowsruntimePage.cs" />
     <Compile Include="Behaviors\EventToCommandBehavior.cs" />
     <Compile Include="Behaviors\MultiSelectBehavior.cs" />
@@ -146,8 +145,9 @@
     <Compile Include="Helpers\AsyncHelper.cs" />
     <Compile Include="Helpers\BindingChangedEventArgs.cs" />
     <Compile Include="Helpers\DependencyPropertyListener.cs" />
+    <Compile Include="Lifecycle\UwpLifecycleProvider.cs" />
     <Compile Include="Navigation\SessionStateService.cs" />
-    <Compile Include="Navigation\WindowsRuntimeNavigationProvider.cs" />
+    <Compile Include="Navigation\UwpNavigationProvider.cs" />
     <Compile Include="Observers\CollectionItemObserver.cs" />
     <Compile Include="Observers\CollectionObserver.cs" />
     <Compile Include="Observers\ObserverBase.cs" />

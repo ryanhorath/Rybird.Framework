@@ -57,36 +57,12 @@ namespace Rybird.Framework
             return Task.FromResult<bool>(true);
         }
 
-        public bool CanOpenWindow { get { return false; } }
-
         public bool CanGoBack { get { return true; } }
 
         public Task<bool> GoBackAsync()
         {
             _navigationController.PopViewController(true);
             return Task.FromResult<bool>(true);
-        }
-
-        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
-        {
-            throw new NotSupportedException();
-        }
-
-        public bool CanGoUp
-        {
-            get { return false; }
-        }
-
-        // Not needed on iOS
-        public Task LoadState()
-        {
-            return TaskConstants.Completed;
-        }
-
-        // Not needed on iOS
-        public Task SaveState()
-        {
-            return TaskConstants.Completed;
         }
     }
 }

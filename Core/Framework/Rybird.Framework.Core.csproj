@@ -71,6 +71,7 @@
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\UriExtensions.cs" />
     <Compile Include="Extensions\ValueTypeExtensions.cs" />
+    <Compile Include="Lifecycle\ILifecycleProvider.cs" />
     <Compile Include="Logging\DefaultLoggingProvider.cs" />
     <Compile Include="Observers\CollectionChangedItemObserver.cs" />
     <Compile Include="Observers\CollectionChangedObserver.cs" />
