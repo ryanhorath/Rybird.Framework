@@ -43,8 +43,6 @@
     <Compile Include="Attributes\RestorableStateAttribute.cs" />
     <Compile Include="BaseClasses\BindableBase.cs" />
     <Compile Include="BaseClasses\ModelBase.cs" />
-    <Compile Include="BaseClasses\Testing\TestModelBase.cs" />
-    <Compile Include="BaseClasses\Testing\TestViewModelBase.cs" />
     <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="Commands\DelegateCommandBase.cs" />
     <Compile Include="BaseClasses\IFrameworkPage.cs" />
@@ -53,9 +51,7 @@
     <Compile Include="Collections\ReadOnlyDictionaryWrapper.cs" />
     <Compile Include="Collections\SortedObservableList.cs" />
     <Compile Include="Commands\NavigationCommand.cs" />
-    <Compile Include="Credentials\ICredentialStoreProvider.cs" />
     <Compile Include="DeviceInfo\WindowLayoutType.cs" />
-    <Compile Include="Dialogs\ISimpleDialogProvider.cs" />
     <Compile Include="Drawing\FrameworkOrientation.cs" />
     <Compile Include="Encryption\IEncryptionProvider.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
@@ -81,7 +77,7 @@
     <Compile Include="RestorableState\StateDictionaryFacade.cs" />
     <Compile Include="Synchronization\ISynchronizationProvider.cs" />
     <Compile Include="Drawing\FrameworkColor.cs" />
-    <Compile Include="Exceptions\ValidationException.cs" />
+    <Compile Include="Validation\ValidationException.cs" />
     <Compile Include="Drawing\FrameworkPoint.cs" />
     <Compile Include="Drawing\FrameworkRect.cs" />
     <Compile Include="Drawing\FrameworkSize.cs" />
@@ -131,9 +127,7 @@
     <Compile Include="WeakReferences\WeakAction.cs" />
     <Compile Include="WeakReferences\WeakActionOfT.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Bindings\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
