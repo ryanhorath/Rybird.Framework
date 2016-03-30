@@ -7,6 +7,8 @@ using Nito.AsyncEx;
 using System.Windows.Controls;
 using System.Windows.Navigation;
 using System.Windows;
+using System.Threading;
+using System.Windows.Threading;
 
 namespace Rybird.Framework
 {
@@ -28,7 +30,17 @@ namespace Rybird.Framework
 
         public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
         {
-            var window = new Window();
+            Thread thread = new Thread(() =>
+            {
+                var window = new Window();
+                window.Show();
+
+                window.Closed += (s, e) => window.Dispatcher.InvokeShutdown();
+
+                Dispatcher.Run();
+            });
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
             return Task.CompletedTask;
         }
 

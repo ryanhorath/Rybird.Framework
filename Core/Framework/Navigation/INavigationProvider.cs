@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Rybird.Framework
@@ -12,5 +9,7 @@ namespace Rybird.Framework
         Task<bool> NavigateAsync(Type viewModelType, string parameter = null);
         bool CanGoBack { get; }
         Task<bool> GoBackAsync();
+        // TODO: Add this for supporting tabbed interfaces, etc.
+        //IPlatformProviders GenerateProvidersForChildFrame();
     }
 }
