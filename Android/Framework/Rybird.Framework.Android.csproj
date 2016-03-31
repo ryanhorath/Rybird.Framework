@@ -107,7 +107,7 @@
     <Compile Include="Converters\IBindingConverter.cs" />
     <Compile Include="Converters\VisibleIfFalseConverter.cs" />
     <Compile Include="Converters\VisibleIfTrueConverter.cs" />
-    <Compile Include="Encryption\AndroidAesEncryptionProvider.cs" />
+    <Compile Include="DeviceInfo\AndroidDeviceInfoProvider.cs" />
     <Compile Include="Inking\SignatureData.cs" />
     <Compile Include="Inking\SignatureState.cs" />
     <Compile Include="Inking\SignatureView.cs" />

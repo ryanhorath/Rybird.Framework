@@ -53,7 +53,6 @@
     <Compile Include="Commands\NavigationCommand.cs" />
     <Compile Include="DeviceInfo\WindowLayoutType.cs" />
     <Compile Include="Drawing\FrameworkOrientation.cs" />
-    <Compile Include="Encryption\IEncryptionProvider.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="Extensions\EnumExtensions.cs" />
     <Compile Include="Extensions\EventHandlerExtensions.cs" />
