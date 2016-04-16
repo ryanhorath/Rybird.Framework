@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.Util;
 
 namespace Rybird.Framework
@@ -22,7 +23,7 @@ namespace Rybird.Framework
             get
             {
                 DisplayMetrics displaymetrics = new DisplayMetrics();
-                _mainActivity.WindowManager.DefaultDisplay.GetRealMetrics(displaymetrics);
+                Context.GetSystemService(Context.WindowService).JavaCast<IWindowManager>();.WindowManager.DefaultDisplay.GetRealMetrics(displaymetrics);
                 return displaymetrics.WidthPixels / displaymetrics.Xdpi;
             }
         }
