@@ -1832,46 +1832,43 @@ namespace Rybird.Framework.Demo
 			public const int icon = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int monoandroidsplash = 2130837591;
+			public const int mr_ic_cast_dark = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int mr_ic_cast_dark = 2130837592;
+			public const int mr_ic_cast_light = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int mr_ic_cast_light = 2130837593;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837594;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int mr_ic_media_route_connecting_mono_light = 2130837595;
+			public const int mr_ic_media_route_mono_dark = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int mr_ic_media_route_mono_dark = 2130837596;
+			public const int mr_ic_media_route_mono_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int mr_ic_media_route_mono_light = 2130837597;
+			public const int mr_ic_pause_dark = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int mr_ic_pause_dark = 2130837598;
+			public const int mr_ic_pause_light = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int mr_ic_pause_light = 2130837599;
+			public const int mr_ic_play_dark = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int mr_ic_play_dark = 2130837600;
+			public const int mr_ic_play_light = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int mr_ic_play_light = 2130837601;
+			public const int mr_ic_settings_dark = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int mr_ic_settings_dark = 2130837602;
+			public const int mr_ic_settings_light = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int mr_ic_settings_light = 2130837603;
-			
-			// aapt resource value: 0x7f020064
-			public const int notification_template_icon_bg = 2130837604;
+			public const int notification_template_icon_bg = 2130837603;
 			
 			static Drawable()
 			{
@@ -3017,9 +3014,6 @@ namespace Rybird.Framework.Demo
 			
 			// aapt resource value: 0x7f080006
 			public const int CardView_Light = 2131230726;
-			
-			// aapt resource value: 0x7f080144
-			public const int Mono_Android_Theme_Splash = 2131231044;
 			
 			// aapt resource value: 0x7f080016
 			public const int Platform_AppCompat = 2131230742;

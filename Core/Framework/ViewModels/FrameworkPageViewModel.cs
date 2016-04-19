@@ -14,7 +14,6 @@ namespace Rybird.Framework
         protected INavigationProvider Navigation { get; private set; }
         protected ISynchronizationProvider Synchronization { get; private set; }
         protected IResourcesProvider Resources { get; private set; }
-        protected IDeviceInfoProvider DeviceInfo { get; private set; }
         private bool _pageLoaded = false;
         private bool _stateLoaded = false;
 
@@ -23,26 +22,6 @@ namespace Rybird.Framework
             Navigation = arguments.Navigation;
             Synchronization = arguments.Synchronization;
             Resources = arguments.Resources;
-            DeviceInfo = arguments.DeviceInfo;
-            DeviceInfo.PropertyChanged += DeviceInfo_PropertyChanged;
-            CalculateWindowLayoutType();
-        }
-
-        private void DeviceInfo_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            if (e.PropertyName == "WindowWidthInInches")
-            {
-                CalculateWindowLayoutType();
-            }
-        }
-
-        private void CalculateWindowLayoutType()
-        {
-            WindowLayoutType = DeviceInfo.WindowWidthInInches < 6.5
-                ? WindowLayoutType.Small
-                : DeviceInfo.WindowWidthInInches < 20.0
-                    ? WindowLayoutType.Normal
-                    : Framework.WindowLayoutType.Large;
         }
 
         private void SetIsNew()
@@ -125,12 +104,6 @@ namespace Rybird.Framework
 
         protected bool IsNew { get; private set; }
 
-        private WindowLayoutType _windowLayoutType = WindowLayoutType.Normal;
-        public WindowLayoutType WindowLayoutType
-        {
-            get { return _windowLayoutType; }
-            private set { SetProperty<WindowLayoutType>(ref _windowLayoutType, value); }
-        }
         #region Commands
         #region SaveCommand
         private DelegateCommand _saveCommand;

@@ -137,8 +137,6 @@
     <Compile Include="Converters\VisibleIfNotNullConverter.cs" />
     <Compile Include="Converters\VisibleIfNullConverter.cs" />
     <Compile Include="Converters\VisibleIfTrueConverter.cs" />
-    <Compile Include="Converters\WindowLayoutTypeVisibleConverter.cs" />
-    <Compile Include="DeviceInfo\DeviceInfoProvider.cs" />
     <Compile Include="Extensions\DependencyObjectExtensions.cs" />
     <Compile Include="Extensions\ItemsControlExtensions.cs" />
     <Compile Include="Flyouts\IFlyoutViewModel.cs" />

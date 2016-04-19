@@ -33,8 +33,7 @@ namespace Rybird.Framework
             _synchronization = new SynchronizationProvider();
             _resources = new WpfResourcesProvider();
             _typeResolver = new DefaultMvvmTypeResolver();
-            // TODO: Implement WPF device info
-            _navigationProvider = new WpfNavigationProvider(RootNavigationService, _typeResolver, _synchronization, _resources, null);
+            _navigationProvider = new WpfNavigationProvider(RootNavigationService, _typeResolver, _synchronization, _resources);
         }
 
         public bool IsSuspending

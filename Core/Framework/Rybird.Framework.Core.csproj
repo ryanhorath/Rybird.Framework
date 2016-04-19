@@ -46,12 +46,10 @@
     <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="Commands\DelegateCommandBase.cs" />
     <Compile Include="BaseClasses\IFrameworkPage.cs" />
-    <Compile Include="DeviceInfo\IDeviceInfoProvider.cs" />
     <Compile Include="Collections\IReadOnlyObservableList.cs" />
     <Compile Include="Collections\ReadOnlyDictionaryWrapper.cs" />
     <Compile Include="Collections\SortedObservableList.cs" />
     <Compile Include="Commands\NavigationCommand.cs" />
-    <Compile Include="DeviceInfo\WindowLayoutType.cs" />
     <Compile Include="Drawing\FrameworkOrientation.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="Extensions\EnumExtensions.cs" />

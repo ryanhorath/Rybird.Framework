@@ -12,7 +12,6 @@ namespace Rybird.Framework
         private IAndroidNavigationProvider _navigationProvider;
         private ISynchronizationProvider _synchronizationProvider;
         private IResourcesProvider _resourcesProvider;
-        private IDeviceInfoProvider _deviceInfoProvider = null;
         private ILoggingProvider _loggingProvider;
         private IMvvmTypeResolver _typeResolver;
 
@@ -35,8 +34,7 @@ namespace Rybird.Framework
             _loggingProvider = new DefaultLoggingProvider();
             _resourcesProvider = new AndroidResourcesProvider(this);
             _synchronizationProvider = new AndroidSynchronizationProvider();
-            // TODO: Implement android device info
-            _navigationProvider = new AndroidNavigationProvider(_typeResolver, _synchronizationProvider, _resourcesProvider, _deviceInfoProvider);
+            _navigationProvider = new AndroidNavigationProvider(_typeResolver, _synchronizationProvider, _resourcesProvider);
         }
 
         #region Activity Lifecycle Events

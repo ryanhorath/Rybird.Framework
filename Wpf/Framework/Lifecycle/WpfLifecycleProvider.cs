@@ -17,15 +17,13 @@ namespace Rybird.Framework
         private readonly IMvvmTypeResolver _typeResolver;
         private readonly ISynchronizationProvider _synchronizationProvider;
         private readonly IResourcesProvider _resourcesProvider;
-        private readonly IDeviceInfoProvider _deviceInfoProvider;
 
         public WpfLifecycleProvider(IMvvmTypeResolver typeResolver, ISynchronizationProvider synchronizationProvider,
-            IResourcesProvider resourcesProvider, IDeviceInfoProvider deviceInfoProvider)
+            IResourcesProvider resourcesProvider)
         {
             _typeResolver = typeResolver;
             _synchronizationProvider = synchronizationProvider;
             _resourcesProvider = resourcesProvider;
-            _deviceInfoProvider = deviceInfoProvider;
         }
 
         public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel

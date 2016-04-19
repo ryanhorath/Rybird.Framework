@@ -11,6 +11,5 @@ namespace Rybird.Framework
         INavigationProvider Navigation { get; }
         ISynchronizationProvider Synchronization { get; }
         IResourcesProvider Resources { get; }
-        IDeviceInfoProvider DeviceInfo { get; }
     }
 }

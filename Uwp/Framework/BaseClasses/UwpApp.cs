@@ -38,14 +38,13 @@ namespace Rybird.Framework
         private ILoggingProvider _loggingProvider;
         private IMvvmTypeResolver _typeResolver;
         private ISynchronizationProvider _synchronization;
-        private IDeviceInfoProvider _deviceInfo;
         private IResourcesProvider _resources;
         private ILifecycleProvider _lifecycleProvider;
 
         protected virtual INavigationProvider CreateNavigationManager(Window window, IMvvmTypeResolver typeResolver, 
-            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider, IDeviceInfoProvider deviceInfoProvider)
+            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider)
         {
-            return new UwpNavigationProvider(window, typeResolver, synchronizationProvider, resourcesProvider, deviceInfoProvider);
+            return new UwpNavigationProvider(window, typeResolver, synchronizationProvider, resourcesProvider);
         }
 
         // Called only when app is launched through the app's main tile
@@ -85,14 +84,13 @@ namespace Rybird.Framework
             _synchronization = new SynchronizationProvider();
             _resources = new WindowsRuntimeResourcesProvider(ResourceLoader.GetForViewIndependentUse(Constants.StoreAppsInfrastructureResourceMapId));
             _typeResolver = new DefaultMvvmTypeResolver();
-            _deviceInfo = new DeviceInfoProvider();
-            _lifecycleProvider = new UwpLifecycleProvider(_typeResolver, _synchronization, _resources, _deviceInfo);
-            _navigationProvider = CreateNavigationManager(Window.Current, _typeResolver, _synchronization, _resources, _deviceInfo);
+            _lifecycleProvider = new UwpLifecycleProvider(_typeResolver, _synchronization, _resources);
+            _navigationProvider = CreateNavigationManager(Window.Current, _typeResolver, _synchronization, _resources);
         }
 
         private FrameworkPageViewModel DefaultViewModelResolver(Type type)
         {
-            return Activator.CreateInstance(type, new PlatformProviders(_navigationProvider, _synchronization, _resources, _deviceInfo)) as FrameworkPageViewModel;
+            return Activator.CreateInstance(type, new PlatformProviders(_navigationProvider, _synchronization, _resources)) as FrameworkPageViewModel;
         }
 
         protected void InitializeFrameAsync(IActivatedEventArgs args)

@@ -51,8 +51,7 @@ namespace Rybird.Framework
             _loggingProvider = new DefaultLoggingProvider();
             _resourcesProvider = new iOSResourcesProvider();
             _synchronizationProvider = new iOSSynchronizationProvider(this);
-            // TODO: Implement iOS device info
-            _navigationProvider = new iOSNavigationProvider(NavigationController, _typeResolver, new PlatformProviders(GetNavigationProvider, _synchronizationProvider, _resourcesProvider, null));
+            _navigationProvider = new iOSNavigationProvider(NavigationController, _typeResolver, new PlatformProviders(GetNavigationProvider, _synchronizationProvider, _resourcesProvider));
         }
 
         private INavigationProvider GetNavigationProvider

@@ -17,12 +17,12 @@ namespace Rybird.Framework
         private IFrameworkApp _application;
 
         public UwpNavigationProvider(Window window, IMvvmTypeResolver typeResolver,
-            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider, IDeviceInfoProvider deviceInfoProvider)
+            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider)
         {
             _window = window;
             _frame = (Frame)window.Content;
             _typeResolver = typeResolver;
-            _platformProviders = new PlatformProviders(this, synchronizationProvider, resourcesProvider, deviceInfoProvider);
+            _platformProviders = new PlatformProviders(this, synchronizationProvider, resourcesProvider);
             _sessionStateService = new SessionStateService(_frame);
             _frame.Navigated += MainFrame_Navigated;
         }

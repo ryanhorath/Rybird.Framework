@@ -18,16 +18,14 @@ namespace Rybird.Framework
         private readonly IMvvmTypeResolver _typeResolver;
         private readonly ISynchronizationProvider _synchronizationProvider;
         private readonly IResourcesProvider _resourcesProvider;
-        private readonly IDeviceInfoProvider _deviceInfoProvider; 
         private readonly ISessionStateService _sessionStateService;
 
         public UwpLifecycleProvider(IMvvmTypeResolver typeResolver, ISynchronizationProvider synchronizationProvider,
-            IResourcesProvider resourcesProvider, IDeviceInfoProvider deviceInfoProvider)
+            IResourcesProvider resourcesProvider)
         {
             _typeResolver = typeResolver;
             _synchronizationProvider = synchronizationProvider;
             _resourcesProvider = resourcesProvider;
-            _deviceInfoProvider = deviceInfoProvider;
             //_sessionStateService = new SessionStateService(_frame);
         }
 
@@ -42,7 +40,7 @@ namespace Rybird.Framework
                 {
                     newAppView = ApplicationView.GetForCurrentView();
                     Window.Current.Content = new Frame();
-                    var navigation = new UwpNavigationProvider(Window.Current, _typeResolver, _synchronizationProvider, _resourcesProvider, _deviceInfoProvider);
+                    var navigation = new UwpNavigationProvider(Window.Current, _typeResolver, _synchronizationProvider, _resourcesProvider);
                     await navigation.NavigateAsync<TViewModel>(parameter);
                     Window.Current.Activate();
                 });
