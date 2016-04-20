@@ -69,6 +69,8 @@
     <Compile Include="Observers\CollectionChangedItemObserver.cs" />
     <Compile Include="Observers\CollectionChangedObserver.cs" />
     <Compile Include="Observers\PropertyChangedObserver.cs" />
+    <Compile Include="Providers\IPlatformProviders.cs" />
+    <Compile Include="Providers\PlatformProviders.cs" />
     <Compile Include="RestorableState\IReadOnlyStateBucket.cs" />
     <Compile Include="RestorableState\IStateBucket.cs" />
     <Compile Include="RestorableState\StateDictionaryFacade.cs" />
@@ -80,8 +82,8 @@
     <Compile Include="Drawing\FrameworkSize.cs" />
     <Compile Include="Logging\ILoggingProvider.cs" />
     <Compile Include="Logging\LogSeverityLevel.cs" />
-    <Compile Include="Navigation\DefaultMvvmTypeResolver.cs" />
-    <Compile Include="Navigation\IMvvmTypeResolver.cs" />
+    <Compile Include="Navigation\FrameworkTypeResolverBase.cs" />
+    <Compile Include="Navigation\IFrameworkTypeResolver.cs" />
     <Compile Include="Navigation\INavigationProvider.cs" />
     <Compile Include="Navigation\ISessionStateService.cs" />
     <Compile Include="Resources\IResourcesProvider.cs" />
@@ -92,7 +94,9 @@
     <Compile Include="Validation\AlwaysValidValidationProvider.cs" />
     <Compile Include="Validation\IValidationProvider.cs" />
     <Compile Include="Validation\ValidatorFacade.cs" />
-    <Compile Include="ViewModels\PlatformProviders.cs" />
+    <Compile Include="Providers\IPerAppPlatformProviders.cs" />
+    <Compile Include="Providers\PerAppPlatformProviders.cs" />
+    <Compile Include="Providers\PerWindowPlatformProviders.cs" />
     <Compile Include="ViewModels\EnumViewModel.cs" />
     <Compile Include="ViewModels\FrameworkPageViewModel.cs" />
     <Compile Include="BaseClasses\GloballyUniqueObject.cs" />
@@ -110,7 +114,7 @@
     <Compile Include="ViewModels\ICollectionViewModel.cs" />
     <Compile Include="ViewModels\IDialogContentViewModel.cs" />
     <Compile Include="ViewModels\IDialogViewModel.cs" />
-    <Compile Include="ViewModels\IPlatformProviders.cs" />
+    <Compile Include="Providers\IPerWindowPlatformProviders.cs" />
     <Compile Include="ViewModels\IPageViewModel.cs" />
     <Compile Include="ViewModels\IViewModel.cs" />
     <Compile Include="ViewModels\MetroListBoxViewModel.cs" />

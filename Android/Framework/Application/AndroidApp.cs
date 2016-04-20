@@ -13,7 +13,7 @@ namespace Rybird.Framework
         private ISynchronizationProvider _synchronizationProvider;
         private IResourcesProvider _resourcesProvider;
         private ILoggingProvider _loggingProvider;
-        private IMvvmTypeResolver _typeResolver;
+        private IFrameworkTypeResolver _typeResolver;
 
         // This constructor is used by Xamarin and is required
         public AndroidApp(IntPtr handle, JniHandleOwnership transfer)
@@ -30,7 +30,7 @@ namespace Rybird.Framework
 
         protected virtual void OnInitialize()
         {
-            _typeResolver = new DefaultMvvmTypeResolver();
+            _typeResolver = new AndroidFrameworkTypeResolver();
             _loggingProvider = new DefaultLoggingProvider();
             _resourcesProvider = new AndroidResourcesProvider(this);
             _synchronizationProvider = new AndroidSynchronizationProvider();

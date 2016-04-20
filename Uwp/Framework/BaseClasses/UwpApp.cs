@@ -36,12 +36,12 @@ namespace Rybird.Framework
             get { return _navigationProvider; }
         }
         private ILoggingProvider _loggingProvider;
-        private IMvvmTypeResolver _typeResolver;
+        private IFrameworkTypeResolver _typeResolver;
         private ISynchronizationProvider _synchronization;
         private IResourcesProvider _resources;
         private ILifecycleProvider _lifecycleProvider;
 
-        protected virtual INavigationProvider CreateNavigationManager(Window window, IMvvmTypeResolver typeResolver, 
+        protected virtual INavigationProvider CreateNavigationManager(Window window, IFrameworkTypeResolver typeResolver, 
             ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider)
         {
             return new UwpNavigationProvider(window, typeResolver, synchronizationProvider, resourcesProvider);

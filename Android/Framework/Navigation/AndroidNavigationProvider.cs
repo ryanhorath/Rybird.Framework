@@ -10,12 +10,12 @@ namespace Rybird.Framework
 {
     public class AndroidNavigationProvider : IAndroidNavigationProvider
     {
-        private readonly IMvvmTypeResolver _typeResolver;
+        private readonly IFrameworkTypeResolver _typeResolver;
         private readonly IPlatformProviders _platformProviders;
         private IFrameworkActivity _currentActivity;
 
         public AndroidNavigationProvider(
-            IMvvmTypeResolver typeResolver,
+            IFrameworkTypeResolver typeResolver,
             ISynchronizationProvider synchronizationProvider,
             IResourcesProvider resourcesProvider)
         {

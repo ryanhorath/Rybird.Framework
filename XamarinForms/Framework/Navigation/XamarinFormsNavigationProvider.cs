@@ -8,7 +8,7 @@ namespace Rybird.Framework
 {
     public class XamarinFormsNavigationProvider : IXamarinFormsNavigationProvider
     {
-        private readonly IMvvmTypeResolver _typeResolver;
+        private readonly IFrameworkTypeResolver _typeResolver;
         private readonly IPlatformProviders _platformProviders;
         private IXamarinFormsFrameworkPage _currentPage;
         private NavigationPage _rootNavigationPage;
@@ -17,7 +17,7 @@ namespace Rybird.Framework
 
         public XamarinFormsNavigationProvider(
             NavigationPage rootNavigationPage,
-            IMvvmTypeResolver typeResolver,
+            IFrameworkTypeResolver typeResolver,
             IPlatformProviders platformProviders)
         {
             _rootNavigationPage = rootNavigationPage;

@@ -13,7 +13,7 @@ namespace Rybird.Framework
     public class WpfNavigationProvider : INavigationProvider
     {
         private readonly NavigationService _navigationService;
-        private readonly IMvvmTypeResolver _typeResolver;
+        private readonly IFrameworkTypeResolver _typeResolver;
         private readonly IPlatformProviders _platformProviders;
         private IWpfFrameworkPage _currentPage;
 

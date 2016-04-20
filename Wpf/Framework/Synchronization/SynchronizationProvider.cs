@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Navigation;
 using System.Windows.Threading;
 
 namespace Rybird.Framework
 {
-    public class SynchronizationProvider : ISynchronizationProvider
+    public class WpfSynchronizationProvider : ISynchronizationProvider
     {
+        private readonly IFrameworkWindow _window;
+
+        public WpfSynchronizationProvider(IFrameworkWindow window)
+        {
+            _window = window;
+        }
+
         public Task RunAsync(Action action)
         {
-            return Application.Current.Dispatcher.InvokeAsync(() => action(), DispatcherPriority.Normal).Task;
+            return _window.Dispatcher.InvokeAsync(() => action(), DispatcherPriority.Normal).Task;
         }
     }
 }

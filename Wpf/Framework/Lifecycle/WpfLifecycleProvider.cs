@@ -14,11 +14,11 @@ namespace Rybird.Framework
 {
     public class WpfLifecycleProvider : ILifecycleProvider
     {
-        private readonly IMvvmTypeResolver _typeResolver;
+        private readonly IFrameworkTypeResolver _typeResolver;
         private readonly ISynchronizationProvider _synchronizationProvider;
         private readonly IResourcesProvider _resourcesProvider;
 
-        public WpfLifecycleProvider(IMvvmTypeResolver typeResolver, ISynchronizationProvider synchronizationProvider,
+        public WpfLifecycleProvider(IFrameworkTypeResolver typeResolver, ISynchronizationProvider synchronizationProvider,
             IResourcesProvider resourcesProvider)
         {
             _typeResolver = typeResolver;

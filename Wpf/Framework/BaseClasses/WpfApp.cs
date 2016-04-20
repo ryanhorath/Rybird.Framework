@@ -12,7 +12,7 @@ namespace Rybird.Framework
     {
         private INavigationProvider _navigationProvider;
         private ILoggingProvider _loggingProvider;
-        private IMvvmTypeResolver _typeResolver;
+        private IFrameworkTypeResolver _typeResolver;
         private ISynchronizationProvider _synchronization;
         private IResourcesProvider _resources;
 
@@ -32,7 +32,7 @@ namespace Rybird.Framework
             _loggingProvider = new DefaultLoggingProvider();
             _synchronization = new SynchronizationProvider();
             _resources = new WpfResourcesProvider();
-            _typeResolver = new DefaultMvvmTypeResolver();
+            _typeResolver = new WpfFrameworkTypeResolver();
             _navigationProvider = new WpfNavigationProvider(RootNavigationService, _typeResolver, _synchronization, _resources);
         }
 

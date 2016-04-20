@@ -15,12 +15,12 @@ namespace Rybird.Framework
 {
     public class UwpLifecycleProvider : ILifecycleProvider
     {
-        private readonly IMvvmTypeResolver _typeResolver;
+        private readonly IFrameworkTypeResolver _typeResolver;
         private readonly ISynchronizationProvider _synchronizationProvider;
         private readonly IResourcesProvider _resourcesProvider;
         private readonly ISessionStateService _sessionStateService;
 
-        public UwpLifecycleProvider(IMvvmTypeResolver typeResolver, ISynchronizationProvider synchronizationProvider,
+        public UwpLifecycleProvider(IFrameworkTypeResolver typeResolver, ISynchronizationProvider synchronizationProvider,
             IResourcesProvider resourcesProvider)
         {
             _typeResolver = typeResolver;

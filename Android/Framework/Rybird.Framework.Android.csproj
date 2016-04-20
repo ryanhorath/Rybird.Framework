@@ -121,6 +121,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\AndroidResourcesProvider.cs" />
     <Compile Include="Synchronization\AndroidSynchronizationProvider.cs" />
+    <Compile Include="TypeResolution\AndroidFrameworkTypeResolver.cs" />
     <Compile Include="Views\ItemsView.cs" />
   </ItemGroup>
   <ItemGroup>

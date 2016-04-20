@@ -13,24 +13,17 @@ namespace Rybird.Framework
         private readonly Window _window;
         private readonly Frame _frame;
         private readonly ISessionStateService _sessionStateService;
-        private readonly IMvvmTypeResolver _typeResolver;
-        private IFrameworkApp _application;
+        private readonly IFrameworkTypeResolver _typeResolver;
+        private readonly IPerAppPlatformProviders _perAppProviders;
 
-        public UwpNavigationProvider(Window window, IMvvmTypeResolver typeResolver,
-            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider)
+        public UwpNavigationProvider(Window window, IFrameworkTypeResolver typeResolver, ILifecycleProvider lifecycle)
         {
             _window = window;
             _frame = (Frame)window.Content;
             _typeResolver = typeResolver;
-            _platformProviders = new PlatformProviders(this, synchronizationProvider, resourcesProvider);
+            _perAppProviders = new PerAppPlatformProviders(lifecycle);
             _sessionStateService = new SessionStateService(_frame);
             _frame.Navigated += MainFrame_Navigated;
-        }
-
-        private readonly IPlatformProviders _platformProviders;
-        protected virtual IPlatformProviders PlatformProviders
-        {
-            get { return _platformProviders; }
         }
 
         private void MainFrame_Navigated(object sender, NavigationEventArgs e)
@@ -39,7 +32,9 @@ namespace Rybird.Framework
             if (page != null)
             {
                 var viewModelType = _typeResolver.ResolveViewModelTypeFromViewType(page.GetType());
-                page.InitializePage(_typeResolver.InstantiatePageViewModel(viewModelType, PlatformProviders), (string)e.Parameter);
+                var perWindowProviders = _typeResolver.GetProvidersForWindow(_window);
+                var platformProviders = new PlatformProviders(_perAppProviders, perWindowProviders);
+                page.InitializePage(_typeResolver.InstantiatePageViewModel(viewModelType, platformProviders), (string)e.Parameter);
             }
         }
 
@@ -53,7 +48,7 @@ namespace Rybird.Framework
             Type pageType = _typeResolver.ResolveViewTypeFromViewModelType(viewModelType);
             if (pageType == null)
             {
-                var error = string.Format(CultureInfo.CurrentCulture, PlatformProviders.Resources.GetString("FrameNavigationServiceUnableResolveMessage"), viewModelType.FullName);
+                var error = string.Format(CultureInfo.CurrentCulture, "Unable to resolve view model", viewModelType.FullName);
                 throw new ArgumentException(error, "viewModel");
             }
             var result = _frame.Navigate(pageType, parameter);
