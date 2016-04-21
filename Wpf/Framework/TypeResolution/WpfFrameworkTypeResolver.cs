@@ -6,16 +6,18 @@ namespace Rybird.Framework
     {
         protected override IPerWindowPlatformProviders GeneratePerWindowProviders(object window)
         {
+            var wpfWindow = (IFrameworkWindow)window;
             var resourcesProvider = new WpfResourcesProvider();
-            var synchronizationProvider = new WpfSynchronizationProvider();
-            var navigationProvider = new AndroidNavigationProvider(this, synchronizationProvider, resourcesProvider);
+            var synchronizationProvider = new WpfSynchronizationProvider(wpfWindow);
+            var navigationProvider = new WpfNavigationProvider(wpfWindow.NavigationService, this, synchronizationProvider, resourcesProvider);
             var providers = new PerWindowPlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
             return providers;
         }
 
         protected override Guid GetUniqueIdForWindow(object window)
         {
-            return _mainWindowGuid;
+            var wpfWindow = (IFrameworkWindow)window;
+            return wpfWindow.UniqueId;
         }
     }
 }

@@ -1,20 +1,14 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Foundation;
 using UIKit;
 using System.Threading.Tasks;
-using System.Threading;
 
 namespace Rybird.Framework
 {
     public class iOSSynchronizationProvider : ISynchronizationProvider
     {
-        private UIApplicationDelegate _application;
+        private readonly UIApplicationDelegate _application;
 
-        public iOSSynchronizationProvider(iOSApp application)
+        public iOSSynchronizationProvider(UIApplicationDelegate application)
         {
             _application = application;
         }

@@ -14,7 +14,7 @@ namespace Rybird.Framework
         private ISynchronizationProvider _synchronizationProvider;
         private IResourcesProvider _resourcesProvider;
         private ILoggingProvider _loggingProvider;
-        private IMvvmTypeResolver _typeResolver;
+        private IFrameworkTypeResolver _typeResolver;
 
         protected abstract Type MainPageViewModelType
         {
@@ -47,7 +47,7 @@ namespace Rybird.Framework
 
         protected virtual void OnInitialize()
         {
-            _typeResolver = new DefaultMvvmTypeResolver();
+            _typeResolver = new iOSFrameworkTypeResolver();
             _loggingProvider = new DefaultLoggingProvider();
             _resourcesProvider = new iOSResourcesProvider();
             _synchronizationProvider = new iOSSynchronizationProvider(this);

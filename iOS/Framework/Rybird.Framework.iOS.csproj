@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\iOSResourcesProvider.cs" />
     <Compile Include="Synchronization\iOSSynchronizationProvider.cs" />
+    <Compile Include="TypeResolution\iOSFrameworkTypeResolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Framework\Rybird.Framework.Core.csproj">

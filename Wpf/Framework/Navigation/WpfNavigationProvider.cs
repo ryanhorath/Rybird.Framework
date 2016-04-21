@@ -17,7 +17,7 @@ namespace Rybird.Framework
         private readonly IPlatformProviders _platformProviders;
         private IWpfFrameworkPage _currentPage;
 
-        public WpfNavigationProvider(NavigationService navigationService, IMvvmTypeResolver typeResolver, 
+        public WpfNavigationProvider(NavigationService navigationService, IFrameworkTypeResolver typeResolver, 
             ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider)
         {
             _navigationService.ThrowIfNull("navigationService");

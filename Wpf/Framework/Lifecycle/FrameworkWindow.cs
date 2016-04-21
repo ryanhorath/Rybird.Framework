@@ -1,18 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Threading.Tasks;
-using System.Reflection;
-using Nito.AsyncEx;
-using System.Windows.Controls;
 using System.Windows.Navigation;
-using System.Windows;
-using System.Threading;
 using System.Windows.Threading;
 
 namespace Rybird.Framework
 {
-    public class FrameworkWindow : Window, IGloballyUniqueObject
+    public class FrameworkWindow : NavigationWindow, IGloballyUniqueObject
     {
         private readonly Guid _uniqueId = Guid.NewGuid();
         public Guid UniqueId { get { return _uniqueId; } }

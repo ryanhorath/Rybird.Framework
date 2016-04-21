@@ -42,9 +42,9 @@ namespace Rybird.Framework
         private ILifecycleProvider _lifecycleProvider;
 
         protected virtual INavigationProvider CreateNavigationManager(Window window, IFrameworkTypeResolver typeResolver, 
-            ISynchronizationProvider synchronizationProvider, IResourcesProvider resourcesProvider)
+            ILifecycleProvider lifecycle)
         {
-            return new UwpNavigationProvider(window, typeResolver, synchronizationProvider, resourcesProvider);
+            return new UwpNavigationProvider(window, typeResolver, lifecycle);
         }
 
         // Called only when app is launched through the app's main tile

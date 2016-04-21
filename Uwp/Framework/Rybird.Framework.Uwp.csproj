@@ -162,6 +162,7 @@
     <Compile Include="Tiles\ISecondaryTilePinner.cs" />
     <Compile Include="Tiles\SecondaryTilePinner.cs" />
     <Compile Include="Tiles\TileInfo.cs" />
+    <Compile Include="TypeResolution\UwpFrameworkTypeResolver.cs" />
     <Compile Include="Validation\ValidationFacade.cs" />
     <Compile Include="VisualStates\IVisualStatesProvider.cs" />
     <Compile Include="VisualStates\VisualStatesProvider.cs" />

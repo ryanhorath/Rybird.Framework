@@ -30,7 +30,7 @@ namespace Rybird.Framework
 
         protected virtual void OnInitialize()
         {
-            _typeResolver = new AndroidFrameworkTypeResolver();
+            _typeResolver = new AndroidFrameworkTypeResolver(this);
             _loggingProvider = new DefaultLoggingProvider();
             _resourcesProvider = new AndroidResourcesProvider(this);
             _synchronizationProvider = new AndroidSynchronizationProvider();

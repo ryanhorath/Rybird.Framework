@@ -12,14 +12,14 @@ namespace Rybird.Framework
 {
     public class iOSNavigationProvider : INavigationProvider
     {
-        private readonly IMvvmTypeResolver _typeResolver;
+        private readonly IFrameworkTypeResolver _typeResolver;
         private IiOSViewController _currentController;
         private readonly IPlatformProviders _platformProviders;
         private readonly UINavigationController _navigationController;
 
         public iOSNavigationProvider(
             UINavigationController navigationController,
-            IMvvmTypeResolver typeResolver,
+            IFrameworkTypeResolver typeResolver,
             IPlatformProviders platformProviders)
         {
             navigationController.ThrowIfNull("navigationController");
