@@ -1,4 +1,6 @@
 ﻿using System;
+using Windows.ApplicationModel.Resources;
+using Windows.UI.Xaml;
 
 namespace Rybird.Framework
 {
@@ -6,18 +8,13 @@ namespace Rybird.Framework
     {
         private readonly Guid _mainWindowGuid = Guid.NewGuid();
 
-        public UwpFrameworkTypeResolver()
+        protected override IPlatformProviders GeneratePerWindowProviders(object window)
         {
-            Guard.AgainstNull(applicationContext, "applicationContext");
-            _applicationContext = applicationContext;
-        }
-
-        protected override IPerWindowPlatformProviders GeneratePerWindowProviders(object window)
-        {
-            var resourcesProvider = new AndroidResourcesProvider(_applicationContext);
-            var synchronizationProvider = new AndroidSynchronizationProvider();
-            var navigationProvider = new AndroidNavigationProvider(this, synchronizationProvider, resourcesProvider);
-            var providers = new PerWindowPlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
+            var win = (Window)window;
+            var resourcesProvider = new UwpResourcesProvider(ResourceLoader.GetForCurrentView());
+            var synchronizationProvider = new UwpSynchronizationProvider();
+            var navigationProvider = new UwpNavigationProvider(win, this);
+            var providers = new PlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
             return providers;
         }
 

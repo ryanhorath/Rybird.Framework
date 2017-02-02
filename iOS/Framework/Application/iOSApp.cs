@@ -47,11 +47,11 @@ namespace Rybird.Framework
 
         protected virtual void OnInitialize()
         {
-            _typeResolver = new iOSFrameworkTypeResolver();
+            _typeResolver = new iOSFrameworkTypeResolver(this);
             _loggingProvider = new DefaultLoggingProvider();
             _resourcesProvider = new iOSResourcesProvider();
             _synchronizationProvider = new iOSSynchronizationProvider(this);
-            _navigationProvider = new iOSNavigationProvider(NavigationController, _typeResolver, new PlatformProviders(GetNavigationProvider, _synchronizationProvider, _resourcesProvider));
+            _navigationProvider = new iOSNavigationProvider(NavigationController, _typeResolver, _synchronizationProvider, _resourcesProvider);
         }
 
         private INavigationProvider GetNavigationProvider

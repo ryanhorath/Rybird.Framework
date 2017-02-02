@@ -5,7 +5,7 @@ namespace Rybird.Framework
 {
     public abstract class FrameworkTypeResolverBase : IFrameworkTypeResolver
     {
-        private IDictionary<Guid, IPerWindowPlatformProviders> _providersCache = new Dictionary<Guid, IPerWindowPlatformProviders>();
+        private IDictionary<Guid, IPlatformProviders> _providersCache = new Dictionary<Guid, IPlatformProviders>();
 
         public virtual Type ResolveViewTypeFromViewModelType(Type viewModelType)
         {
@@ -35,13 +35,13 @@ namespace Rybird.Framework
             return (IFrameworkPage)Activator.CreateInstance(type);
         }
 
-        public virtual IPerWindowPlatformProviders GetProvidersForWindow(object window)
+        public virtual IPlatformProviders GetProvidersForWindow(object window)
         {
             var uniqueId = GetUniqueIdForWindow(window);
             return _providersCache.GetValueOrAddDefault(uniqueId, () => GeneratePerWindowProviders(window));
         }
 
-        protected abstract IPerWindowPlatformProviders GeneratePerWindowProviders(object window);
+        protected abstract IPlatformProviders GeneratePerWindowProviders(object window);
         protected abstract Guid GetUniqueIdForWindow(object window);
     }
 }

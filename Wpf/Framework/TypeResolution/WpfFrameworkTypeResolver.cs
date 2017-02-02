@@ -4,13 +4,13 @@ namespace Rybird.Framework
 {
     public class WpfFrameworkTypeResolver : FrameworkTypeResolverBase
     {
-        protected override IPerWindowPlatformProviders GeneratePerWindowProviders(object window)
+        protected override IPlatformProviders GeneratePerWindowProviders(object window)
         {
             var wpfWindow = (IFrameworkWindow)window;
             var resourcesProvider = new WpfResourcesProvider();
             var synchronizationProvider = new WpfSynchronizationProvider(wpfWindow);
             var navigationProvider = new WpfNavigationProvider(wpfWindow.NavigationService, this, synchronizationProvider, resourcesProvider);
-            var providers = new PerWindowPlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
+            var providers = new PlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
             return providers;
         }
 

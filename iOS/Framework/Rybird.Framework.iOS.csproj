@@ -49,7 +49,6 @@
     <Compile Include="Controllers\iOSViewController.cs" />
     <Compile Include="Controllers\NSCoderFacade.cs" />
     <Compile Include="Controllers\iOSViewControllerHelper.cs" />
-    <Compile Include="Lifecycle\iOSLifecycleProvider.cs" />
     <Compile Include="Logging\iOSConsoleAppender.cs" />
     <Compile Include="Logging\iOSFileAppender.cs" />
     <Compile Include="Navigation\iOSNavigationProvider.cs" />

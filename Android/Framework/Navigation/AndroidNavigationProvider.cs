@@ -11,7 +11,6 @@ namespace Rybird.Framework
     public class AndroidNavigationProvider : IAndroidNavigationProvider
     {
         private readonly IFrameworkTypeResolver _typeResolver;
-        private readonly IPlatformProviders _platformProviders;
         private IFrameworkActivity _currentActivity;
 
         public AndroidNavigationProvider(
@@ -20,7 +19,13 @@ namespace Rybird.Framework
             IResourcesProvider resourcesProvider)
         {
             _typeResolver = typeResolver;
-            _platformProviders = new PlatformProviders(this, synchronizationProvider, resourcesProvider);
+            _platformProviders = typeResolver.GetProvidersForWindow(null);
+        }
+
+        private readonly IPlatformProviders _platformProviders;
+        public IPlatformProviders PlatformProviders
+        {
+            get { return _platformProviders; }
         }
 
         public virtual bool InitializeActivity(IFrameworkActivity activity)
@@ -81,28 +86,6 @@ namespace Rybird.Framework
             return TaskConstants.BooleanTrue;
         }
 
-        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
-        {
-            throw new NotSupportedException();
-        }
-
-        public bool CanOpenWindow
-        { 
-            get { return false; }
-        }
-
-        // Not needed on Android
-        public Task LoadState()
-        {
-            return TaskConstants.Completed;
-        }
-
-        // Not needed on Android
-        public Task SaveState()
-        {
-            return TaskConstants.Completed;
-        }
-
         private IDictionary<string, FrameworkPageViewModel> _viewModelCache = new Dictionary<string, FrameworkPageViewModel>();
         private void CacheViewModel(IFrameworkActivity activity, FrameworkPageViewModel viewModel)
         {
@@ -117,6 +100,28 @@ namespace Rybird.Framework
         private bool IsViewModelCached(IFrameworkActivity activity)
         {
             return _viewModelCache.ContainsKey(activity.ActivityInstanceId);
+        }
+
+        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
+        {
+            throw new NotSupportedException();
+        }
+
+        public bool CanOpenWindow
+        {
+            get { return false; }
+        }
+
+        // Not needed on Android
+        public Task LoadState()
+        {
+            return TaskConstants.Completed;
+        }
+
+        // Not needed on Android
+        public Task SaveState()
+        {
+            return TaskConstants.Completed;
         }
     }
 }

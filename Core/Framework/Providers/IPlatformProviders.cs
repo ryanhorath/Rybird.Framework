@@ -2,7 +2,8 @@
 {
     public interface IPlatformProviders
     {
-        IPerAppPlatformProviders AppProviders { get; }
-        IPerWindowPlatformProviders WindowProviders { get; }
+        INavigationProvider Navigation { get; }
+        ISynchronizationProvider Synchronization { get; }
+        IResourcesProvider Resources { get; }
     }
 }

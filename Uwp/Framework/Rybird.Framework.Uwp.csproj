@@ -143,7 +143,6 @@
     <Compile Include="Helpers\AsyncHelper.cs" />
     <Compile Include="Helpers\BindingChangedEventArgs.cs" />
     <Compile Include="Helpers\DependencyPropertyListener.cs" />
-    <Compile Include="Lifecycle\UwpLifecycleProvider.cs" />
     <Compile Include="Navigation\SessionStateService.cs" />
     <Compile Include="Navigation\UwpNavigationProvider.cs" />
     <Compile Include="Observers\CollectionItemObserver.cs" />
@@ -154,11 +153,11 @@
     <Compile Include="Panels\WrapPanel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\ResourcesFacade.cs" />
-    <Compile Include="Resources\WindowsRuntimeResourcesProvider.cs" />
+    <Compile Include="Resources\UwpResourcesProvider.cs" />
     <Compile Include="Serialization\SerializationFacade.cs" />
     <Compile Include="Settings\SettingsFacade.cs" />
     <Compile Include="Storage\StorageFacade.cs" />
-    <Compile Include="Synchronization\SynchronizationProvider.cs" />
+    <Compile Include="Synchronization\UwpSynchronizationProvider.cs" />
     <Compile Include="Tiles\ISecondaryTilePinner.cs" />
     <Compile Include="Tiles\SecondaryTilePinner.cs" />
     <Compile Include="Tiles\TileInfo.cs" />

@@ -64,7 +64,6 @@
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\UriExtensions.cs" />
     <Compile Include="Extensions\ValueTypeExtensions.cs" />
-    <Compile Include="Lifecycle\ILifecycleProvider.cs" />
     <Compile Include="Logging\DefaultLoggingProvider.cs" />
     <Compile Include="Observers\CollectionChangedItemObserver.cs" />
     <Compile Include="Observers\CollectionChangedObserver.cs" />
@@ -94,9 +93,6 @@
     <Compile Include="Validation\AlwaysValidValidationProvider.cs" />
     <Compile Include="Validation\IValidationProvider.cs" />
     <Compile Include="Validation\ValidatorFacade.cs" />
-    <Compile Include="Providers\IPerAppPlatformProviders.cs" />
-    <Compile Include="Providers\PerAppPlatformProviders.cs" />
-    <Compile Include="Providers\PerWindowPlatformProviders.cs" />
     <Compile Include="ViewModels\EnumViewModel.cs" />
     <Compile Include="ViewModels\FrameworkPageViewModel.cs" />
     <Compile Include="BaseClasses\GloballyUniqueObject.cs" />
@@ -114,7 +110,6 @@
     <Compile Include="ViewModels\ICollectionViewModel.cs" />
     <Compile Include="ViewModels\IDialogContentViewModel.cs" />
     <Compile Include="ViewModels\IDialogViewModel.cs" />
-    <Compile Include="Providers\IPerWindowPlatformProviders.cs" />
     <Compile Include="ViewModels\IPageViewModel.cs" />
     <Compile Include="ViewModels\IViewModel.cs" />
     <Compile Include="ViewModels\MetroListBoxViewModel.cs" />

@@ -20,12 +20,13 @@ namespace Rybird.Framework
         public iOSNavigationProvider(
             UINavigationController navigationController,
             IFrameworkTypeResolver typeResolver,
-            IPlatformProviders platformProviders)
+            ISynchronizationProvider synchronization,
+            IResourcesProvider resources)
         {
             navigationController.ThrowIfNull("navigationController");
             _navigationController = navigationController;
             _typeResolver = typeResolver;
-            _platformProviders = platformProviders;
+            _platformProviders = new PlatformProviders(this, synchronization, resources);
         }
 
         private void InitializeController(IiOSViewController controller, string parameter)
@@ -63,6 +64,25 @@ namespace Rybird.Framework
         {
             _navigationController.PopViewController(true);
             return Task.FromResult<bool>(true);
+        }
+
+        public bool CanOpenWindow { get { return false; } }
+
+        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
+        {
+            throw new NotSupportedException();
+        }
+
+        // Not needed on iOS
+        public Task LoadState()
+        {
+            return TaskConstants.Completed;
+        }
+
+        // Not needed on iOS
+        public Task SaveState()
+        {
+            return TaskConstants.Completed;
         }
     }
 }

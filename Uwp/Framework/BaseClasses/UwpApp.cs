@@ -39,12 +39,10 @@ namespace Rybird.Framework
         private IFrameworkTypeResolver _typeResolver;
         private ISynchronizationProvider _synchronization;
         private IResourcesProvider _resources;
-        private ILifecycleProvider _lifecycleProvider;
 
-        protected virtual INavigationProvider CreateNavigationManager(Window window, IFrameworkTypeResolver typeResolver, 
-            ILifecycleProvider lifecycle)
+        protected virtual INavigationProvider CreateNavigationManager(Window window, IFrameworkTypeResolver typeResolver)
         {
-            return new UwpNavigationProvider(window, typeResolver, lifecycle);
+            return new UwpNavigationProvider(window, typeResolver);
         }
 
         // Called only when app is launched through the app's main tile
@@ -58,7 +56,7 @@ namespace Rybird.Framework
             {
                 try
                 {
-                    await _lifecycleProvider.LoadState();
+                    await _navigationProvider.LoadState();
                 }
                 catch (SessionStateServiceException)
                 {
@@ -81,16 +79,18 @@ namespace Rybird.Framework
         protected virtual void OnInitialize(IActivatedEventArgs args)
         {
             _loggingProvider = new DefaultLoggingProvider();
-            _synchronization = new SynchronizationProvider();
-            _resources = new WindowsRuntimeResourcesProvider(ResourceLoader.GetForViewIndependentUse(Constants.StoreAppsInfrastructureResourceMapId));
-            _typeResolver = new DefaultMvvmTypeResolver();
-            _lifecycleProvider = new UwpLifecycleProvider(_typeResolver, _synchronization, _resources);
-            _navigationProvider = CreateNavigationManager(Window.Current, _typeResolver, _synchronization, _resources);
+            _synchronization = new UwpSynchronizationProvider();
+            _resources = new UwpResourcesProvider(ResourceLoader.GetForViewIndependentUse(Constants.StoreAppsInfrastructureResourceMapId));
+            _typeResolver = new UwpFrameworkTypeResolver();
+            _navigationProvider = CreateNavigationManager(Window.Current, _typeResolver);
+            _platformProviders = new PlatformProviders(_navigationProvider, _synchronization, _resources);
         }
+
+        private IPlatformProviders _platformProviders;
 
         private FrameworkPageViewModel DefaultViewModelResolver(Type type)
         {
-            return Activator.CreateInstance(type, new PlatformProviders(_navigationProvider, _synchronization, _resources)) as FrameworkPageViewModel;
+            return Activator.CreateInstance(type, _platformProviders) as FrameworkPageViewModel;
         }
 
         protected void InitializeFrameAsync(IActivatedEventArgs args)
@@ -125,7 +125,7 @@ namespace Rybird.Framework
             try
             {
                 var deferral = e.SuspendingOperation.GetDeferral();
-                await _lifecycleProvider.SaveState();
+                await _navigationProvider.SaveState();
                 await OnSuspend();
                 deferral.Complete();
             }

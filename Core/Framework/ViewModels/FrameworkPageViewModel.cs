@@ -19,9 +19,9 @@ namespace Rybird.Framework
 
         public FrameworkPageViewModel(IPlatformProviders arguments)
         {
-            Navigation = arguments.WindowProviders.Navigation;
-            Synchronization = arguments.WindowProviders.Synchronization;
-            Resources = arguments.WindowProviders.Resources;
+            Navigation = arguments.Navigation;
+            Synchronization = arguments.Synchronization;
+            Resources = arguments.Resources;
         }
 
         private void SetIsNew()

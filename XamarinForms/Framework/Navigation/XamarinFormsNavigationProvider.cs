@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 using Xamarin.Forms;
+using Nito.AsyncEx;
 
 namespace Rybird.Framework
 {
     public class XamarinFormsNavigationProvider : IXamarinFormsNavigationProvider
     {
         private readonly IFrameworkTypeResolver _typeResolver;
-        private readonly IPlatformProviders _platformProviders;
         private IXamarinFormsFrameworkPage _currentPage;
         private NavigationPage _rootNavigationPage;
         private INavigation _xamarinNavigation;
@@ -24,6 +24,12 @@ namespace Rybird.Framework
             _xamarinNavigation = rootNavigationPage.Navigation;
             _typeResolver = typeResolver;
             _platformProviders = platformProviders;
+        }
+
+        private readonly IPlatformProviders _platformProviders;
+        public IPlatformProviders PlatformProviders
+        {
+            get { return _platformProviders; }
         }
 
         public IXamarinFormsFrameworkPage CurrentFrameworkPage
@@ -95,6 +101,26 @@ namespace Rybird.Framework
             }
             await _xamarinNavigation.PopAsync();
             return true;
+        }
+
+        public bool CanOpenWindow
+        {
+            get { return false; }
+        }
+
+        public Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
+        {
+            throw new NotSupportedException();
+        }
+
+        public Task LoadState()
+        {
+            return TaskConstants.Completed;
+        }
+
+        public Task SaveState()
+        {
+            return TaskConstants.Completed;
         }
     }
 }

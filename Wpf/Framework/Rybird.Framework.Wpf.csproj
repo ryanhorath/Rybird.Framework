@@ -87,7 +87,6 @@
   <ItemGroup>
     <Compile Include="Lifecycle\IFrameworkWindow.cs" />
     <Compile Include="Lifecycle\FrameworkWindow.cs" />
-    <Compile Include="Lifecycle\WpfLifecycleProvider.cs" />
     <Compile Include="Resources\WpfResourcesProvider.cs" />
     <Compile Include="Synchronization\SynchronizationProvider.cs" />
     <Compile Include="TypeResolution\WpfFrameworkTypeResolver.cs" />

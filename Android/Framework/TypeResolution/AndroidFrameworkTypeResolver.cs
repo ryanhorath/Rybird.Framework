@@ -14,12 +14,12 @@ namespace Rybird.Framework
             _applicationContext = applicationContext;
         }
 
-        protected override IPerWindowPlatformProviders GeneratePerWindowProviders(object window)
+        protected override IPlatformProviders GeneratePerWindowProviders(object window)
         {
             var resourcesProvider = new AndroidResourcesProvider(_applicationContext);
             var synchronizationProvider = new AndroidSynchronizationProvider();
             var navigationProvider = new AndroidNavigationProvider(this, synchronizationProvider, resourcesProvider);
-            var providers = new PerWindowPlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
+            var providers = new PlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
             return providers;
         }
 

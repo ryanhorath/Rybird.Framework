@@ -7,23 +7,20 @@ namespace Rybird.Framework
     {
         private readonly Guid _mainWindowGuid = Guid.NewGuid();
         private readonly UIApplicationDelegate _application;
-        private readonly IFrameworkTypeResolver _typeResolver;
 
-        public iOSFrameworkTypeResolver(UIApplicationDelegate application, IFrameworkTypeResolver typeResolver)
+        public iOSFrameworkTypeResolver(UIApplicationDelegate application)
         {
             Guard.AgainstNull(application, "application");
             _application = application;
-            Guard.AgainstNull(typeResolver, "typeResolver");
-            _typeResolver = typeResolver;
         }
 
-        protected override IPerWindowPlatformProviders GeneratePerWindowProviders(object window)
+        protected override IPlatformProviders GeneratePerWindowProviders(object window)
         {
             var navigationController = (UINavigationController)window;
             var resourcesProvider = new iOSResourcesProvider();
             var synchronizationProvider = new iOSSynchronizationProvider(_application);
-            var navigationProvider = new iOSNavigationProvider(navigationController, _typeResolver, resourcesProvider);
-            var providers = new PerWindowPlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
+            var navigationProvider = new iOSNavigationProvider(navigationController, this, synchronizationProvider, resourcesProvider);
+            var providers = new PlatformProviders(navigationProvider, synchronizationProvider, resourcesProvider);
             return providers;
         }
 

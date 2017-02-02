@@ -5,6 +5,9 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Threading.Tasks;
 using Nito.AsyncEx;
+using Windows.UI.ViewManagement;
+using Windows.UI.Core;
+using Windows.ApplicationModel.Core;
 
 namespace Rybird.Framework
 {
@@ -14,14 +17,12 @@ namespace Rybird.Framework
         private readonly Frame _frame;
         private readonly ISessionStateService _sessionStateService;
         private readonly IFrameworkTypeResolver _typeResolver;
-        private readonly IPerAppPlatformProviders _perAppProviders;
 
-        public UwpNavigationProvider(Window window, IFrameworkTypeResolver typeResolver, ILifecycleProvider lifecycle)
+        public UwpNavigationProvider(Window window, IFrameworkTypeResolver typeResolver)
         {
             _window = window;
             _frame = (Frame)window.Content;
             _typeResolver = typeResolver;
-            _perAppProviders = new PerAppPlatformProviders(lifecycle);
             _sessionStateService = new SessionStateService(_frame);
             _frame.Navigated += MainFrame_Navigated;
         }
@@ -32,8 +33,7 @@ namespace Rybird.Framework
             if (page != null)
             {
                 var viewModelType = _typeResolver.ResolveViewModelTypeFromViewType(page.GetType());
-                var perWindowProviders = _typeResolver.GetProvidersForWindow(_window);
-                var platformProviders = new PlatformProviders(_perAppProviders, perWindowProviders);
+                var platformProviders = _typeResolver.GetProvidersForWindow(_window);
                 page.InitializePage(_typeResolver.InstantiatePageViewModel(viewModelType, platformProviders), (string)e.Parameter);
             }
         }
@@ -64,6 +64,41 @@ namespace Rybird.Framework
         public bool CanGoBack
         {
             get { return _frame.CanGoBack; }
+        }
+
+        public async Task OpenWindowAsync<TViewModel>(string parameter = null) where TViewModel : FrameworkPageViewModel
+        {
+            var newCoreView = CoreApplication.CreateNewView();
+
+            ApplicationView newAppView = null;
+            var currentViewId = ApplicationView.GetApplicationViewIdForWindow(Window.Current.CoreWindow);
+
+            await newCoreView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, async () =>
+            {
+                newAppView = ApplicationView.GetForCurrentView();
+                Window.Current.Content = new Frame();
+                var navigation = new UwpNavigationProvider(Window.Current, _typeResolver);
+                await navigation.NavigateAsync<TViewModel>(parameter);
+                Window.Current.Activate();
+            });
+
+            await ApplicationViewSwitcher.TryShowAsStandaloneAsync(newAppView.Id, ViewSizePreference.UseHalf, currentViewId, ViewSizePreference.UseHalf);
+        }
+
+        public bool CanOpenWindow
+        {
+            get { return true; }
+        }
+
+        public async Task LoadState()
+        {
+            await _sessionStateService.RestoreSessionStateAsync();
+            _sessionStateService.RestoreFrameState();
+        }
+
+        public async Task SaveState()
+        {
+            await _sessionStateService.SaveAsync();
         }
     }
 }

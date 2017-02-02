@@ -112,7 +112,6 @@
     <Compile Include="Inking\SignatureView.cs" />
     <Compile Include="JavaWrappers\JavaObjectExtensions.cs" />
     <Compile Include="JavaWrappers\JavaWrapper.cs" />
-    <Compile Include="Lifecycle\AndroidLifecycleProvider.cs" />
     <Compile Include="Navigation\BundleFacade.cs" />
     <Compile Include="Navigation\IAndroidNavigationProvider.cs" />
     <Compile Include="Navigation\AndroidNavigationProvider.cs" />
